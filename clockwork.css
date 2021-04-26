@@ -10,6 +10,7 @@
 	text-align: center;
 	font-weight: bold;
 	font-size: large;
+	display: flex;
 }
 input[type="text"] {
 	background-color: transparent;
@@ -118,6 +119,9 @@ input.dot[value="4"] ~ button.gt-4 > span.checked {
 .splitrow > .col:last-child {
 	width: calc(66%);
 }
+.headerrow {
+	margin-bottom: 3px;
+}
 .headerrow > .col {
 	width: calc(50% - 85px);
 }
@@ -149,14 +153,23 @@ input[type=number]::-webkit-outer-spin-button {
 	margin-right: 2px;
 }
 .headpost {
-	width: 72px;
+	display: inline-flex;
+	max-width: 72px;
+	height: 28px;
     background-image: url("https://raw.githubusercontent.com/EtoileLion/Project-Ansel/master/images/post.png");
-	background-position: center-left;
-	background-repeat: none;
+	background-position: 0px 7px;
+	background-repeat: no-repeat;
+	flex: 10;
+}
+.flexspacer {
+	flex: 1;
 }
 .headpre {
-	width: 72px;
+		display: inline-flex;
+	max-width: 72px;
+	height: 28px;
     background-image: url("https://raw.githubusercontent.com/EtoileLion/Project-Ansel/master/images/pre.png");
-	background-position: center-left;
-	background-repeat: none;
+	background-position: 0px 7px;
+	background-repeat: no-repeat;
+	flex: 10;	
 }

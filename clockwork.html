@@ -21,7 +21,7 @@
 		<div class="col">
 			<div class="twocolrow">
 				<div class="col noright">
-					<div class="sectionhead">Status</div>			
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Status<div class="headpost"></div><div class="flexspacer"></div></div>			
 					<div class="sheet-row">
 						<label>Class</label>
 						<div class="floatright">
@@ -72,7 +72,7 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="sectionhead">Potential</div>
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Potential<div class="headpost"></div><div class="flexspacer"></div></div>
 					<div class="sheet-row">
 						<label>Purpose</label>
 						<div class="floatright">
@@ -147,7 +147,7 @@
 				</div>
 			</div>
 			<div class="section">
-				<div class="sectionhead">Memberships</div>			
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Memberships<div class="headpost"></div><div class="flexspacer"></div></div>			
 				<fieldset class="repeating_memberships" name="repeating_memberships">
 					<div class="flexcontainer">
 						<input type="text" name="attr_membername" class="flex">
@@ -174,9 +174,10 @@
 				</fieldset>
 			</div>
 			<div class="section">
-				<div class="sectionhead">Reputations</div>			
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Reputations<div class="headpost"></div><div class="flexspacer"></div></div>			
 				<fieldset class="repeating_reputations" name="repeating_reputations">
-					<input type="text" name="attr_reputationname">
+					<div class="flexcontainer">
+					<input type="text" name="attr_reputationname" class="flex">
 					<input type="number" name= "attr_reputationank" value="1" class="rightspace">
 					<div class="dots">
 						<input type="hidden" name="attr_reputationtemp" class="dot" value="1" />
@@ -196,12 +197,14 @@
 							<span class="checked"></span>
 						</button>
 					</div>
+					</div>
 				</fieldset>
 			</div>
 			<div class="section">
-				<div class="sectionhead">Affinities</div>			
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Affinities<div class="headpost"></div><div class="flexspacer"></div></div>			
 				<fieldset class="repeating_affinities" name="repeating_affinities">
-					<input type="text" name="attr_affinityname">
+				<div class="flexcontainer">
+					<input type="text" name="attr_affinityname" class="flex">
 					<input type="number" name= "attr_affinityank" value="1" class="rightspace">
 					<div class="dots">
 						<input type="hidden" name="attr_affinitytemp" class="dot" value="1" />
@@ -221,22 +224,28 @@
 							<span class="checked"></span>
 						</button>
 					</div>
+				</div>
 				</fieldset>
 			</div>
 			<div class="section">
-				<div class="sectionhead">Blessings, Curses &amp; Masteries</div>			
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Blessings, Curses <br>&amp; Masteries<div class="headpost"></div><div class="flexspacer"></div></div>
 				<fieldset class="repeating_blessings" name="repeating_blessings">
-					<input type="text" name="attr_blessname">
+				<div class="flexcontainer">
+					<input type="text" name="attr_blessname" class="flex">
+				</div>
 				</fieldset>
 			</div>
 			<div class="section">
-				<div class="sectionhead">Assets, Liabilities &amp; Transcendent Powers</div>			
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Assets, Liabilities<div class="headpost"></div><div class="flexspacer"></div></div>
+				<div class="sectionhead"><div class="flexspacer"></div>&amp; Transcendent Powers	<div class="flexspacer"></div></div>		
 				<fieldset class="repeating_assets" name="repeating_assets">
-					<input type="text" name="attr_membername">					
+				<div class="flexcontainer">
+					<input type="text" name="attr_membername" class="flex">		
+				</div>
 				</fieldset>
 			</div>
 			<div class="section">
-				<div class="sectionhead">Weapons &amp; Evidence</div>			
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Weapons &amp; Evidence<div class="headpost"></div><div class="flexspacer"></div></div>			
 				<fieldset class="repeating_weapons" name="repeating_weapons">
 					<input type="text" name="attr_weaponname">
 					<input type="text" name="attr_weaponreach">
@@ -247,7 +256,7 @@
 			</div>
 		</div>
 		<div class="col">
-			<div class="sectionhead">Aptitudes</div>
+			<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Aptitudes<div class="headpost"></div><div class="flexspacer"></div></div>
 			<div class="threecolrow">
 				<div class="col">
 					<div class="twocolrow">
@@ -394,7 +403,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="sectionhead">Skills</div>
+			<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Skills<div class="headpost"></div><div class="flexspacer"></div></div>
 			<div class="threecolrow">
 				<div class="col">
 					<div class="twocolrow">
@@ -1026,7 +1035,7 @@
 			</div>
 			<div class="twocolrow">
 				<div class="col">
-					<div class="sectionhead">Social Conflict</div>
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Social Conflict<div class="headpost"></div><div class="flexspacer"></div></div>
 					<div class="splitcolrow">
 						<div class="col">
 							<span class="socialdesc">Social Defense<br> Will+Skill</span>
@@ -1038,7 +1047,7 @@
 							<input type="text" name="attr_socdefskill">
 						</div>
 					</div>
-					<div class="sectionhead">Dispositions</div>
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Dispositions<div class="headpost"></div><div class="flexspacer"></div></div>
 					<div class="sheet-row">
 						<span>Hostile</span>
 						<span>Guarded</span>
@@ -1072,7 +1081,7 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="sectionhead"><span class="headpre"></span>Physical Conflict<span class="headpost"></span></div>
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Physical Conflict<div class="headpost"></div><div class="flexspacer"></div></div>
 					<div class="splitcolrow">
 						<div class="col">
 							<span class="physdesc">Physical Defense<br>Vigor+Skill</span>
@@ -1086,7 +1095,7 @@
 							<label>Armor</label>
 						</div>
 					</div>
-					<div class="sectionhead">Guard</div>
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Guard<div class="headpost"></div><div class="flexspacer"></div></div>
 					<div class="sheet-row"><label>1/2 FOCUS +1 for Weapon</label></div>
 					<div class="sheet-row">
 					<div class="dots">
