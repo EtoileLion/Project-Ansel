@@ -59,7 +59,7 @@ button.dot > span {
 
 /* Hide the "checked" section of the radio if the hidden attribute value is greater than the button value */
 .none,
-input[name="attr_guardwep"][value="0"] + button,
+input[name="attr_guardwep"][value="0"] ~ button.guardwepdot,
 input.dot[value="0"] ~ button.gt-0guard, 
 input.dot[value="1"] ~ button.gt-1guard,
 input.dot[value="2"] ~ button.gt-2guard,
@@ -246,7 +246,39 @@ button.radio > span.checked {
 	color: white;
 	font-weight: bold;
 }
+.guarddot {
+  padding: 0;
+  border: solid 1px #a8a8a8;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(100,0,0,0.3) !important;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;  
+	color: white;
+	font-weight: bold;	
+	
+}
+.guardwepdot > span.checked,
 .guarddot > span.checked {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+ background-color: rgb(238,227,210);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;  
+	color: white;
+	font-weight: bold;
+}
+.guardwepdot {
+	  padding: 0;
+  border: solid 1px #a8a8a8;
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -260,6 +292,7 @@ button.radio > span.checked {
 }
 
 /* Hide the "checked" section of the radio if the attribute value does not match the radio */
+input.guardval[value="0"] + button > span.checked,
 input.radio[value="1"] ~ button.radio-1 > span.unchecked,
 input.radio[value="2"] ~ button.radio-2 > span.unchecked,
 input.radio[value="3"] ~ button.radio-3 > span.unchecked,

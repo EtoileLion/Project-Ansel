@@ -1277,18 +1277,22 @@
 							<div class="flexspacer"></div>
 							<input type="hidden" name="attr_guard" class="dot" value="0" />
 							<input type="hidden" name="attr_guardwep" value="0">
-							<div class="none"><label class="center" data-i18n="guarddown">Guard Down</label></div>
-							<button type="action" name="act_guard-1" class="dot gt-0guard">
+							<div class="none"><label class="center" data-i18n="guarddown">Guard Down</label></div>							
+							<input type="hidden" class="guardval" name="attr_guard1" value="1" />
+							<button type="action" name="act_guard-1" class="guarddot gt-0guard">
 								<span class="checked"></span>
 							</button>
-							<button type="action" name="act_guard-2" class="dot gt-0guard gt-1guard">
+							<input type="hidden" class="guardval" name="attr_guard2" value="1" />
+							<button type="action" name="act_guard-2" class="guarddot gt-0guard gt-1guard">
 								<span class="checked"></span>
 							</button>
-							<button type="action" name="act_guard-3" class="dot gt-0guard gt-1guard gt-2guard">
+							<input type="hidden" class="guardval" name="attr_guard3" value="1" />
+							<button type="action" name="act_guard-3" class="guarddot gt-0guard gt-1guard gt-2guard">
 								<span class="checked"></span>
-							</button>
+							</button>							
 							<input type="hidden" name="attr_guardwep" value="0" />
-							<button type="action" name="act_guard-wep" class="guarddot dot">
+							<input type="hidden" class="guardval" name="attr_guard4" value="1" />
+							<button type="action" name="act_guard-4" class="guardwepdot">
 								<span class="checked"></span>
 							</button>
 							<div class="flexspacer"></div>
@@ -1340,13 +1344,10 @@
 	dotTypes.forEach(function(type) {
 		dotValues.forEach(function(value) {
 			on(`clicked:${type}-${value}`, function(event) {		
-				console.log({event});
 				let attribute = event.triggerName.replace(/clicked:|-\d+$/g,'');
 				let govalue = event.triggerName.substring(event.triggerName.length-1);
 				getAttrs([attribute],function(current) {
-					console.log(`${current[attribute]}:${govalue}`);
 					if(current[attribute] === govalue) { govalue = Math.max(govalue - 1,0); }
-					console.log(`${current[attribute]}:${govalue}`);
 					const setObj = {};
 					setObj[attribute] = govalue;
 					setAttrs(setObj);
@@ -1365,6 +1366,17 @@
 		});
 	});
 	
+	const guardValues = ["1","2","3","4"]
+	guardValues.forEach(function(value) {
+		on(`clicked:guard-${value}`, function (event) {
+			getAttrs([`guard${value}`], function (current) { 
+				setObj = {};
+				setObj[`guard${value}`] = (parseInt(current[`guard${value}`])+1) % 2;
+				setAttrs(setObj);
+			});
+		});
+	});
+	
 	on("change:vigor change:will change:composure change:socdefskill change:phydefskill change:vocation change:temptation change:tactics change:survival change:streetwise change:stealth change:science change:riding change:refinement change:will change:presence change:parley change:mysteries change:melee change:medicine change:investigation change:intuition change:guile change:fisticuffs change:firearms change:focus change:reason change:fencing change:engineering change:command change:burglary change:bureaucracy change:athletics change:artisan change:academics", function(event) {
 		getAttrs(["vigor","will","composure","phydefskill","socdefskill","vocation","tactics","survival","streetwise","stealth","science","riding","refinement","will","presence","parley","mysteries","melee","medicine","investigation","intuition","guile","fisticuffs","firearms","focus","reason","fencing","engineering","command","burglary","bureaucracy","athletics","artisan","academics"], function(currents) {
 			let setObj = {};
@@ -1372,7 +1384,6 @@
 			setObj["socdef"] = 0+parseInt(currents["will"])+parseInt(currents[currents["socdefskill"]]);
 			setObj["athdef"] = 0+parseInt(currents["vigor"])+parseInt(currents["athletics"]);
 			setObj["phydef"] = 0+parseInt(currents["vigor"])+parseInt(currents[currents["phydefskill"]]);
-			console.log({setObj});
 			setAttrs(setObj);
 		});
 	});
@@ -1381,12 +1392,10 @@
 		getSectionIDs("weapons",function(idarray) {
 		    let fullarray = [...idarray.map((x) => "repeating_weapons_"+x+"_weaponguard"),"focus"]
 			let weaponadd = "0";
-			console.log(fullarray);
 			getAttrs(fullarray, function(currents) {
 				for(const [key,value] of Object.entries(currents)) { 				
 					if(key === "focus") { continue; }
 					if(value === "on") { weaponadd = "1" }
-					console.log(`${key}:${value}:${weaponadd}`);
 				};
 				let setObj = {};
 				setObj["guard"] = Math.floor(parseInt(currents["focus"]) / 2);
@@ -1395,4 +1404,4 @@
 			});
 		});
 	});
-</script>																
+</script>																	
