@@ -73,6 +73,7 @@
 "A":"A",
 "F":"F",
 "Esteem":"Esteem",
+"esteemdesc":"Indifferent + (Tenor - Status) +/- 1/2 Relevant Reputation",
 "physicalconflict":"Physical Conflict",
 "physicaldefense":"Physical Defense",
 "vigorskill":"Vigor+Skill",

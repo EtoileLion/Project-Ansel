@@ -360,7 +360,21 @@ input.radio:not([value="5"]) ~ button.radio-5 > span.checked {
 .shield span {
 	line-height: 69px;
 }
-
+.repcontrol_add,
+.repcontrol_edit {
+	background-image: none;
+	background-color: transparent;
+	border: 1px solid rgb(172,146,20);
+	border-bottom-color: rgb(122,106,20);
+}
+.repcontrol_add:hover {
+	background-image: none;
+	background-color: rgba(0,100,0,0.3);	
+}
+.repcontrol_edit:hover {
+	background-image: none;
+	background-color: rgba(100,0,0,0.3);	
+}
 /* Temporary fix until i can figure out what's making things "broken" */
 .repitem.repitembroken {
     border: none !important;
