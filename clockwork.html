@@ -1310,7 +1310,7 @@
 	</div>
 </div>
 <script type="text/worker">
-	const dotTypes = ["repeating_memberships:membertemp","vocation","tactics","survival","streetwise","stealth","science","riding","refinement","will","presence","parley","mysteries","melee","medicine","investigation","intuition","guile","fisticuffs","firearms","focus","reason","fencing","engineering","composure","command","burglary","bureaucracy","athletics","artisan","academics","vigor","grace","corruption","ethertemp","purposetemp","meanstemp","classtemp","repeating_reputations:reputationtemp","repeating_affinities:affinitytemp","wound"];
+	const dotTypes = ["repeating_memberships:membertemp","vocation","temptation","tactics","survival","streetwise","stealth","science","riding","refinement","will","presence","parley","mysteries","melee","medicine","investigation","intuition","guile","fisticuffs","firearms","focus","reason","fencing","engineering","composure","command","burglary","bureaucracy","athletics","artisan","academics","vigor","grace","corruption","ethertemp","purposetemp","meanstemp","classtemp","repeating_reputations:reputationtemp","repeating_affinities:affinitytemp","wound"];
 	const dotValues = ["1","2","3","4","5"];
 	dotTypes.forEach(function(type) {
 		dotValues.forEach(function(value) {
@@ -1340,7 +1340,7 @@
 		});
 	});
 	
-	on("change:vigor change:will change:composure change:socdefskill change:phydefskill change:vocation change:tactics change:survival change:streetwise change:stealth change:science change:riding change:refinement change:will change:presence change:parley change:mysteries change:melee change:medicine change:investigation change:intuition change:guile change:fisticuffs change:firearms change:focus change:reason change:fencing change:engineering change:command change:burglary change:bureaucracy change:athletics change:artisan change:academics", function(event) {
+	on("change:vigor change:will change:composure change:socdefskill change:phydefskill change:vocation change:temptation change:tactics change:survival change:streetwise change:stealth change:science change:riding change:refinement change:will change:presence change:parley change:mysteries change:melee change:medicine change:investigation change:intuition change:guile change:fisticuffs change:firearms change:focus change:reason change:fencing change:engineering change:command change:burglary change:bureaucracy change:athletics change:artisan change:academics", function(event) {
 		getAttrs(["vigor","will","composure","phydefskill","socdefskill","vocation","tactics","survival","streetwise","stealth","science","riding","refinement","will","presence","parley","mysteries","melee","medicine","investigation","intuition","guile","fisticuffs","firearms","focus","reason","fencing","engineering","command","burglary","bureaucracy","athletics","artisan","academics"], function(currents) {
 			let setObj = {};
 			setObj["compdef"] = 0+parseInt(currents["will"])+parseInt(currents["composure"]);
