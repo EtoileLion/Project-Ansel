@@ -2,7 +2,7 @@
 	<div class="headerrow">
 		<div class="col">
 			<!-- headimg -->
-			&nbsp;
+			<img class="logo" src="https://raw.githubusercontent.com/EtoileLion/Project-Ansel/master/images/CD.png">
 		</div>
 		<div class="col">
 			<label class="sectionhead">Name</label>
@@ -25,9 +25,9 @@
 					<div class="sheet-row">
 						<label>Class</label>
 						<div class="floatright">
-							<input type="number" name= "attr_classrank" value="1">						
+							<input type="number" name= "attr_classrank" value="0">						
 							<div class="dots">
-								<input type="hidden" name="attr_classtemp" class="dot" value="1" />
+								<input type="hidden" name="attr_classtemp" class="dot" value="0" />
 								<button type="action" name="act_classtemp-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -49,9 +49,9 @@
 					<div class="sheet-row">
 						<label>Means</label>
 						<div class="floatright">
-							<input type="number" name= "attr_meansrank" value="1">
+							<input type="number" name= "attr_meansrank" value="0">
 							<div class="dots">
-								<input type="hidden" name="attr_meanstemp" class="dot" value="1" />
+								<input type="hidden" name="attr_meanstemp" class="dot" value="0" />
 								<button type="action" name="act_meanstemp-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -76,9 +76,9 @@
 					<div class="sheet-row">
 						<label>Purpose</label>
 						<div class="floatright">
-							<input type="number" name= "attr_purposerank" value="1">
+							<input type="number" name= "attr_purposerank" value="0">
 							<div class="dots">
-								<input type="hidden" name="attr_purposetemp" class="dot" value="1" />
+								<input type="hidden" name="attr_purposetemp" class="dot" value="0" />
 								<button type="action" name="act_purposetemp-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -100,9 +100,9 @@
 					<div class="sheet-row">
 						<label>Ether</label>
 						<div class="floatright">
-							<input type="number" name= "attr_etherrank" value="1">
+							<input type="number" name= "attr_etherrank" value="0">
 							<div class="dots">
-								<input type="hidden" name="attr_ethertemp" class="dot" value="1" />
+								<input type="hidden" name="attr_ethertemp" class="dot" value="0" />
 								<button type="action" name="act_ethertemp-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -125,7 +125,7 @@
 						<label>Corruption</label>
 						<div class="floatright">							
 							<div class="dots">
-								<input type="hidden" name="attr_corruption" class="dot" value="1" />
+								<input type="hidden" name="attr_corruption" class="dot" value="0" />
 								<button type="action" name="act_corruption-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -153,7 +153,7 @@
 						<input type="text" name="attr_membername" class="flex">
 						<input type="number" name= "attr_memberank" value="1" class="rightspace">
 						<div class="dots">
-							<input type="hidden" name="attr_membertemp" class="dot" value="1" />
+							<input type="hidden" name="attr_membertemp" class="dot" value="0" />
 							<button type="action" name="act_membertemp-1" class="dot gt-0">
 								<span class="checked"></span>
 							</button>
@@ -177,81 +177,97 @@
 				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Reputations<div class="headpost"></div><div class="flexspacer"></div></div>			
 				<fieldset class="repeating_reputations" name="repeating_reputations">
 					<div class="flexcontainer">
-					<input type="text" name="attr_reputationname" class="flex">
-					<input type="number" name= "attr_reputationank" value="1" class="rightspace">
-					<div class="dots">
-						<input type="hidden" name="attr_reputationtemp" class="dot" value="1" />
-						<button type="action" name="act_reputationtemp-1" class="dot gt-0">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_reputationtemp-2" class="dot gt-0 gt-1">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_reputationtemp-3" class="dot gt-0 gt-1 gt-2">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_reputationtemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_reputationtemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-							<span class="checked"></span>
-						</button>
-					</div>
+						<input type="text" name="attr_reputationname" class="flex">
+						<input type="number" name= "attr_reputationank" value="1" class="rightspace">
+						<div class="dots">
+							<input type="hidden" name="attr_reputationtemp" class="dot" value="0" />
+							<button type="action" name="act_reputationtemp-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_reputationtemp-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_reputationtemp-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_reputationtemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_reputationtemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>
 					</div>
 				</fieldset>
 			</div>
 			<div class="section">
 				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Affinities<div class="headpost"></div><div class="flexspacer"></div></div>			
 				<fieldset class="repeating_affinities" name="repeating_affinities">
-				<div class="flexcontainer">
-					<input type="text" name="attr_affinityname" class="flex">
-					<input type="number" name= "attr_affinityank" value="1" class="rightspace">
-					<div class="dots">
-						<input type="hidden" name="attr_affinitytemp" class="dot" value="1" />
-						<button type="action" name="act_affinitytemp-1" class="dot gt-0">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_affinitytemp-2" class="dot gt-0 gt-1">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_affinitytemp-3" class="dot gt-0 gt-1 gt-2">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_affinitytemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_affinitytemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-							<span class="checked"></span>
-						</button>
+					<div class="flexcontainer">
+						<input type="text" name="attr_affinityname" class="flex">
+						<input type="number" name= "attr_affinityank" value="1" class="rightspace">
+						<div class="dots">
+							<input type="hidden" name="attr_affinitytemp" class="dot" value="0" />
+							<button type="action" name="act_affinitytemp-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_affinitytemp-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_affinitytemp-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_affinitytemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_affinitytemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>
 					</div>
-				</div>
 				</fieldset>
 			</div>
 			<div class="section">
 				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Blessings, Curses <br>&amp; Masteries<div class="headpost"></div><div class="flexspacer"></div></div>
 				<fieldset class="repeating_blessings" name="repeating_blessings">
-				<div class="flexcontainer">
-					<input type="text" name="attr_blessname" class="flex">
-				</div>
+					<div class="flexcontainer">
+						<input type="text" name="attr_blessname" class="flex">
+					</div>
 				</fieldset>
 			</div>
 			<div class="section">
 				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Assets, Liabilities<div class="headpost"></div><div class="flexspacer"></div></div>
 				<div class="sectionhead"><div class="flexspacer"></div>&amp; Transcendent Powers	<div class="flexspacer"></div></div>		
 				<fieldset class="repeating_assets" name="repeating_assets">
-				<div class="flexcontainer">
-					<input type="text" name="attr_membername" class="flex">		
-				</div>
+					<div class="flexcontainer">
+						<input type="text" name="attr_membername" class="flex">		
+					</div>
 				</fieldset>
 			</div>
 			<div class="section">
 				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Weapons &amp; Evidence<div class="headpost"></div><div class="flexspacer"></div></div>			
+				<div class="weaponhead flexcontainer">
+					<div class="flex">Name</div>
+					<div class="selwidth">Range</div>
+					<div class="numwidth">P</div>
+					<div class="numwidth">L</div>
+					<div class="condwidth">Condition(s)</div>
+				</div>
 				<fieldset class="repeating_weapons" name="repeating_weapons">
-					<input type="text" name="attr_weaponname">
-					<input type="text" name="attr_weaponreach">
-					<input type="text" name="attr_weaponpotency">
-					<input type="text" name="attr_weaponload">
-					<input type="text" name="attr_weaponcond">
+					<div class="flexcontainer">
+						<div class="flex inline"><input class="weaponname" type="text" name="attr_weaponname"></div>
+						<select class="weaponselect" name="attr_weaponreach">
+							<option value="touch">Touch</option>
+							<option value="close">Close</option>
+							<option value="extend">Extended</option>
+							<option value="short">Short Range</option>
+							<option value="long">Long Range</option>
+							<option value="aoe">AoE</option>
+						</select>
+						<input type="number" name="attr_weaponpotency" value="0">
+						<input type="number" name="attr_weaponload" value="0">
+						<input type="text" class="weaponcond" name="attr_weaponcond">
+					</div>
 				</fieldset>
 			</div>
 		</div>
@@ -410,7 +426,7 @@
 						<div class="col"><label>Academics</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_academics" class="dot" value="1" />
+								<input type="hidden" name="attr_academics" class="dot" value="0" />
 								<button type="action" name="act_academics-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -433,7 +449,7 @@
 						<div class="col"><label>Artisan</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_artisan" class="dot" value="1" />
+								<input type="hidden" name="attr_artisan" class="dot" value="0" />
 								<button type="action" name="act_artisan-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -456,7 +472,7 @@
 						<div class="col"><label>Athletics</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_athletics" class="dot" value="1" />
+								<input type="hidden" name="attr_athletics" class="dot" value="0" />
 								<button type="action" name="act_athletics-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -479,7 +495,7 @@
 						<div class="col"><label>Bureaucracy</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_bureaucracy" class="dot" value="1" />
+								<input type="hidden" name="attr_bureaucracy" class="dot" value="0" />
 								<button type="action" name="act_bureaucracy-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -502,7 +518,7 @@
 						<div class="col"><label>Burglary</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_burglary" class="dot" value="1" />
+								<input type="hidden" name="attr_burglary" class="dot" value="0" />
 								<button type="action" name="act_burglary-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -525,7 +541,7 @@
 						<div class="col"><label>Command</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_command" class="dot" value="1" />
+								<input type="hidden" name="attr_command" class="dot" value="0" />
 								<button type="action" name="act_command-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -548,7 +564,7 @@
 						<div class="col"><label>Composure</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_composure" class="dot" value="1" />
+								<input type="hidden" name="attr_composure" class="dot" value="0" />
 								<button type="action" name="act_composure-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -571,7 +587,7 @@
 						<div class="col"><label>Engineering</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_engineering" class="dot" value="1" />
+								<input type="hidden" name="attr_engineering" class="dot" value="0" />
 								<button type="action" name="act_engineering-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -594,7 +610,7 @@
 						<div class="col"><label>Fencing</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_fencing" class="dot" value="1" />
+								<input type="hidden" name="attr_fencing" class="dot" value="0" />
 								<button type="action" name="act_fencing-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -619,7 +635,7 @@
 						<div class="col"><label>Firearms</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_firearms" class="dot" value="1" />
+								<input type="hidden" name="attr_firearms" class="dot" value="0" />
 								<button type="action" name="act_firearms-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -642,7 +658,7 @@
 						<div class="col"><label>Fisticuffs</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_fisticuffs" class="dot" value="1" />
+								<input type="hidden" name="attr_fisticuffs" class="dot" value="0" />
 								<button type="action" name="act_fisticuffs-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -665,7 +681,7 @@
 						<div class="col"><label>Guile</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_guile" class="dot" value="1" />
+								<input type="hidden" name="attr_guile" class="dot" value="0" />
 								<button type="action" name="act_guile-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -688,7 +704,7 @@
 						<div class="col"><label>Intuition</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_intuition" class="dot" value="1" />
+								<input type="hidden" name="attr_intuition" class="dot" value="0" />
 								<button type="action" name="act_intuition-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -711,7 +727,7 @@
 						<div class="col"><label>Investigation</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_investigation" class="dot" value="1" />
+								<input type="hidden" name="attr_investigation" class="dot" value="0" />
 								<button type="action" name="act_investigation-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -734,7 +750,7 @@
 						<div class="col"><label>Medicine</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_medicine" class="dot" value="1" />
+								<input type="hidden" name="attr_medicine" class="dot" value="0" />
 								<button type="action" name="act_medicine-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -757,7 +773,7 @@
 						<div class="col"><label>Melee</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_melee" class="dot" value="1" />
+								<input type="hidden" name="attr_melee" class="dot" value="0" />
 								<button type="action" name="act_melee-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -780,7 +796,7 @@
 						<div class="col"><label>Mysteries</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_mysteries" class="dot" value="1" />
+								<input type="hidden" name="attr_mysteries" class="dot" value="0" />
 								<button type="action" name="act_mysteries-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -803,7 +819,7 @@
 						<div class="col"><label>Parley</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_parley" class="dot" value="1" />
+								<input type="hidden" name="attr_parley" class="dot" value="0" />
 								<button type="action" name="act_parley-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -828,7 +844,7 @@
 						<div class="col"><label>Refinement</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_refinement" class="dot" value="1" />
+								<input type="hidden" name="attr_refinement" class="dot" value="0" />
 								<button type="action" name="act_refinement-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -851,7 +867,7 @@
 						<div class="col"><label>Riding</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_riding" class="dot" value="1" />
+								<input type="hidden" name="attr_riding" class="dot" value="0" />
 								<button type="action" name="act_riding-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -874,7 +890,7 @@
 						<div class="col"><label>Science</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_science" class="dot" value="1" />
+								<input type="hidden" name="attr_science" class="dot" value="0" />
 								<button type="action" name="act_science-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -897,7 +913,7 @@
 						<div class="col"><label>Stealth</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_stealth" class="dot" value="1" />
+								<input type="hidden" name="attr_stealth" class="dot" value="0" />
 								<button type="action" name="act_stealth-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -920,7 +936,7 @@
 						<div class="col"><label>Streetwise</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_streetwise" class="dot" value="1" />
+								<input type="hidden" name="attr_streetwise" class="dot" value="0" />
 								<button type="action" name="act_streetwise-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -943,7 +959,7 @@
 						<div class="col"><label>Survival</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_survival" class="dot" value="1" />
+								<input type="hidden" name="attr_survival" class="dot" value="0" />
 								<button type="action" name="act_survival-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -966,7 +982,7 @@
 						<div class="col"><label>Tactics</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_tactics" class="dot" value="1" />
+								<input type="hidden" name="attr_tactics" class="dot" value="0" />
 								<button type="action" name="act_tactics-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -989,7 +1005,7 @@
 						<div class="col"><label>Temptation</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_temptation" class="dot" value="1" />
+								<input type="hidden" name="attr_temptation" class="dot" value="0" />
 								<button type="action" name="act_temptation-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -1012,7 +1028,7 @@
 						<div class="col"><label>Vocation</label></div>
 						<div class="dotcol">							
 							<div class="dots">
-								<input type="hidden" name="attr_vocation" class="dot" value="1" />
+								<input type="hidden" name="attr_vocation" class="dot" value="0" />
 								<button type="action" name="act_vocation-1" class="dot gt-0">
 									<span class="checked"></span>
 								</button>
@@ -1036,91 +1052,229 @@
 			<div class="twocolrow">
 				<div class="col">
 					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Social Conflict<div class="headpost"></div><div class="flexspacer"></div></div>
-					<div class="splitcolrow">
-						<div class="col">
-							<span class="socialdesc">Social Defense<br> Will+Skill</span>
-						</div>
-						<div class="col">
-							<input type="number" class="shield" value="@{composure}" disabled>
-							<input type="number" class="shield" value="@{@{socdefskill}}" disabled><br>
-							<label>Composure</label>
-							<input type="text" name="attr_socdefskill">
-						</div>
+					<div class="sheet-row center">
+						<div class="socialdesc">Social Defense</div>
+						<div class="weaponhead">Will+Skill</div>
+						<table class="deftable">
+							<tr>
+								<td class="shield"><span name="attr_compdef"></span></td>
+								<td class="shield"><span name="attr_socdef"></span></td>
+							</tr>
+							<tr>
+								<td><label>Composure</label></td>
+								<td><select name="attr_socdefskill">
+									<option value="academics">Academics</option>
+									<option value="artisan">Artisan</option>
+									<option value="athletics">Athletics</option>
+									<option value="bureaucracy">Bureaucracy</option>
+									<option value="burglary">Burglary</option>
+									<option value="command">Command</option>
+									<option value="composure">Composure</option>
+									<option value="engineering">Engineering</option>
+									<option value="fencing">Fencing</option>
+									<option value="firearms">Firearms</option>
+									<option value="fisticuffs">Fisticuffs</option>
+									<option value="focus">Focus</option>
+									<option value="guile">Guile</option>
+									<option value="intuition">Intuition</option>
+									<option value="investigation">Investigation</option>
+									<option value="medicine">Medicine</option>
+									<option value="melee">Melee</option>
+									<option value="mysteries">Mysteries</option>
+									<option value="parley">Parley</option>
+									<option value="presence">Presence</option>
+									<option value="refinement">Refinement</option>
+									<option value="reason">Reason</option>
+									<option value="riding">Riding</option>
+									<option value="science">Science</option>
+									<option value="stealth">Stealth</option>
+									<option value="streetwise">Streetwise</option>
+									<option value="survival">Survival</option>
+									<option value="tactics">Tactics</option>
+									<option value="vocation">Vocation</option>
+									<option value="will">Will</option>
+								</select>
+								</td>
+							</tr>
+						</table>
 					</div>
 					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Dispositions<div class="headpost"></div><div class="flexspacer"></div></div>
-					<div class="sheet-row">
-						<span>Hostile</span>
-						<span>Guarded</span>
-						<span>Indifferent</span>
-						<span>Agreeable</span>
-						<span>Favorable</span>				
+					<div class="flexcontainer" style="clear: both;">
+						<div class="tableesque">Hostile</div>
+						<div class="tableesque">Guarded</div>
+						<div class="tableesque">Indifferent</div>
+						<div class="tableesque">Agreeable</div>
+						<div class="tableesque">Favorable</div>				
 					</div>
 					<div class="dispositiondots">													
-						<input type="radio" name="attr_disposition1" value="H">
-						<input type="radio" name="attr_disposition1" value="G">
-						<input type="radio" name="attr_disposition1" value="I" checked>
-						<input type="radio" name="attr_disposition1" value="A">
-						<input type="radio" name="attr_disposition1" value="F">
-					</div>
-					<input type="text" name="attr_disposition1name">
-					<div class="dispositiondots">													
-						<input type="radio" name="attr_disposition2" value="H">
-						<input type="radio" name="attr_disposition2" value="G">
-						<input type="radio" name="attr_disposition2" value="I" checked>
-						<input type="radio" name="attr_disposition2" value="A">
-						<input type="radio" name="attr_disposition2" value="F">
+						<input type="hidden" class="radio" name="attr_disposition1" value="3" />
+						<div class="flexspacer"></div>
+						<button type="action" name="act_disposition1_1" class="radio radio-1">
+							<span class="unchecked">H</span>
+							<span class="checked">H</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_disposition1_2" class="radio radio-2">
+						    <span class="unchecked">G</span>
+							<span class="checked">G</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_disposition1_3" class="radio radio-3">
+							<span class="unchecked">I</span>
+							<span class="checked">I</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_disposition1_4" class="radio radio-4">
+							<span class="unchecked">A</span>
+							<span class="checked">A</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_disposition1_5" class="radio radio-5">
+							<span class="unchecked">F</span>
+							<span class="checked">F</span>
+						</button>
+						<div class="flexspacer"></div>
 					</div>
 					<input type="text" name="attr_disposition2name">
-					
 					<div class="dispositiondots">
-						<input type="radio" name="attr_esteem" value="H">
-						<input type="radio" name="attr_esteem" value="G">
-						<input type="radio" name="attr_esteem" value="I" checked>
-						<input type="radio" name="attr_esteem" value="A">
-						<input type="radio" name="attr_esteem" value="F">
+						<input type="hidden" class="radio" name="attr_disposition2" value="3" />
+						<div class="flexspacer"></div>
+						<button type="action" name="act_disposition2_1" class="radio radio-1">
+							<span class="unchecked">H</span>
+							<span class="checked">H</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_disposition2_2" class="radio radio-2">
+							<span class="unchecked">G</span>
+							<span class="checked">G</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_disposition2_3" class="radio radio-3">
+							<span class="unchecked">I</span>
+							<span class="checked">I</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_disposition2_4" class="radio radio-4">
+							<span class="unchecked">A</span>
+							<span class="checked">A</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_disposition2_5" class="radio radio-5">
+							<span class="unchecked">F</span>
+							<span class="checked">F</span>
+						</button>
+						<div class="flexspacer"></div>
+					</div>
+					<input type="text" name="attr_disposition2name">	
+					<label>Esteem <span class="box"></span></label>
+					<div class="dispositiondots">
+						<input type="hidden" class="radio" name="attr_esteem" value="3" />
+						<div class="flexspacer"></div>
+						<button type="action" name="act_esteem_1" class="radio radio-1">
+							<span class="unchecked">H</span>
+							<span class="checked">H</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_esteem_2" class="radio radio-2">
+							<span class="unchecked">G</span>
+							<span class="checked">G</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_esteem_3" class="radio radio-3">
+							<span class="unchecked">I</span>
+							<span class="checked">I</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_esteem_4" class="radio radio-4">
+							<span class="unchecked">A</span>
+							<span class="checked">A</span>
+						</button>
+						<div class="flexspacer"></div>
+						<button type="action" name="act_esteem_5" class="radio radio-5">
+							<span class="unchecked">F</span>
+							<span class="checked">F</span>
+						</button>
+						<div class="flexspacer"></div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Physical Conflict<div class="headpost"></div><div class="flexspacer"></div></div>
-					<div class="splitcolrow">
-						<div class="col">
-							<span class="physdesc">Physical Defense<br>Vigor+Skill</span>
-						</div>
-						<div class="col">
-							<input type="number" class="shield" value="@{athletics}" disabled>
-							<input type="number" class="shield" value="@{@{phydefskill}}" disabled>
-							<input type="number" class="armor" name="attr_armor"><br>
-							<label>Athletics</label>
-							<input type="text" name="attr_socdefskill">
-							<label>Armor</label>
-						</div>
+					<div class="sheet-row center">
+						<div class="socialdesc">Physical Defense</div>					
+						<div class="weaponhead">Vigor+Skill</div>
+						<table class="deftable">
+							<tr>
+								<td class="shield"><span name="attr_athdef"></span></td>
+								<td class="shield"><span name="attr_phydef"></span></td>
+								<td class="armor"><input type="number" name="attr_armor" value="0"></td>
+							</tr>
+							<tr>
+								<td><label>Athletics</label></td>
+								<td><select name="attr_phydefskill">
+									<option value="academics">Academics</option>
+									<option value="artisan">Artisan</option>
+									<option value="athletics">Athletics</option>
+									<option value="bureaucracy">Bureaucracy</option>
+									<option value="burglary">Burglary</option>
+									<option value="command">Command</option>
+									<option value="composure">Composure</option>
+									<option value="engineering">Engineering</option>
+									<option value="fencing">Fencing</option>
+									<option value="firearms">Firearms</option>
+									<option value="fisticuffs">Fisticuffs</option>
+									<option value="focus">Focus</option>
+									<option value="guile">Guile</option>
+									<option value="intuition">Intuition</option>
+									<option value="investigation">Investigation</option>
+									<option value="medicine">Medicine</option>
+									<option value="melee">Melee</option>
+									<option value="mysteries">Mysteries</option>
+									<option value="parley">Parley</option>
+									<option value="presence">Presence</option>
+									<option value="refinement">Refinement</option>
+									<option value="reason">Reason</option>
+									<option value="riding">Riding</option>
+									<option value="science">Science</option>
+									<option value="stealth">Stealth</option>
+									<option value="streetwise">Streetwise</option>
+									<option value="survival">Survival</option>
+									<option value="tactics">Tactics</option>
+									<option value="vocation">Vocation</option>
+									<option value="will">Will</option>
+								</select>
+								</td>
+								<td><label>Armor</label></td>
+							</tr>
+						</table>					
 					</div>
 					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Guard<div class="headpost"></div><div class="flexspacer"></div></div>
-					<div class="sheet-row"><label>1/2 FOCUS +1 for Weapon</label></div>
+				<div class="flexcontainer"><div class="flexspacer"></div><span class="weaponhead">1/2 Focus, +1 for Weapon</span><div class="flexspacer"></div></label></div>
 					<div class="sheet-row">
-					<div class="dots">
-						<input type="hidden" name="attr_guard" class="dot" value="1" />
-						<button type="action" name="act_guard-1" class="dot gt-0">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_guard-2" class="dot gt-0 gt-1">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_guard-3" class="dot gt-0 gt-1 gt-2">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_guard-4" class="dot gt-0 gt-1 gt-2 gt-3">
-							<span class="checked"></span>
-						</button>
-						<button type="action" name="act_guard-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-							<span class="checked"></span>
-						</button>
-					</div>
+						<div class="dispositiondots marginbot">
+							<div class="flexspacer"></div>
+							<input type="hidden" name="attr_guard" class="dot" value="0" />
+							<div class="none"><label class="center">Guard Down</label></div>
+							<button type="action" name="act_guard-1" class="dot gt-0guard">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_guard-2" class="dot gt-0guard gt-1guard">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_guard-3" class="dot gt-0guard gt-1guard gt-2guard">
+								<span class="checked"></span>
+							</button>
+							<input type="hidden" name="attr_guardwep" value="">
+							<button type="action" name="act_guard-wep" class="guarddot dot">
+								<span class="checked"></span>
+							</button>
+							<div class="flexspacer"></div>
+						</div>
 					</div>
 					<div class="sheet-row">
 						<label>Wounds</label>
-						<div class="dots">
-							<input type="hidden" name="attr_wound" class="dot" value="1" />
+						<div class="dispositiondots marginbot">
+							<div class="flexspacer"></div>
+							<input type="hidden" name="attr_wound" class="dot" value="0" />
 							<button type="action" name="act_wound-1" class="dot gt-0">
 								<span class="checked"></span>
 							</button>
@@ -1136,29 +1290,28 @@
 							<button type="action" name="act_wound-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
 								<span class="checked"></span>
 							</button>
+							<div class="flexspacer"></div>
 						</div>	
 					</div>
 					<div class="sheet-row">
 						<label>Wound Penalties</label>
-						<input type="number" name="attr_woundpenalty" class="blackbox">
+						<input type="number" name="attr_woundpenalty" class="blackbox marginbot" style="width: 3.5em !important" value="0">
+					</div>
+					<div class="sheet-row">
 						<label>Experience Points</label>
-						<input type="number" name="attr_xp" class="blackbox">
+						<input type="number" name="attr_xp" class="blackbox marginbot" style="width: 3.5em !important" value="0">
 					</div>
-					<div class="splitrow">
-						<div class="col">Persistent Conditions</div>
-						<div class="col">
-							<fieldset class="repeating_conditions" name="repeating_conditions">
-								<input type="text" name="attr_condition">
-							</fieldset>
-						</div>
-					</div>
+					<div class="sectionhead"><div class="flexspacer"></div>Persistent Conditions<div class="flexspacer"></div></div>
+					<fieldset class="repeating_conditions" name="repeating_conditions">
+						<input type="text" name="attr_condition">
+					</fieldset>				
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <script type="text/worker">
-	const dotTypes = ["repeating_memberships:membertemp","vocation","guard","tactics","survival","streetwise","stealth","science","riding","refinement","will","presence","parley","mysteries","melee","medicine","investigation","intuition","guile","fisticuffs","firearms","focus","reason","fencing","engineering","composure","command","burglary","bureaucracy","athletics","artisan","academics","vigor","grace","corruption","ethertemp","purposetemp","meanstemp","classtemp","repeating_reputations:reputationtemp","repeating_affinities:affinitytemp"];
+	const dotTypes = ["repeating_memberships:membertemp","vocation","tactics","survival","streetwise","stealth","science","riding","refinement","will","presence","parley","mysteries","melee","medicine","investigation","intuition","guile","fisticuffs","firearms","focus","reason","fencing","engineering","composure","command","burglary","bureaucracy","athletics","artisan","academics","vigor","grace","corruption","ethertemp","purposetemp","meanstemp","classtemp","repeating_reputations:reputationtemp","repeating_affinities:affinitytemp","wound"];
 	const dotValues = ["1","2","3","4","5"];
 	dotTypes.forEach(function(type) {
 		dotValues.forEach(function(value) {
@@ -1177,4 +1330,45 @@
 			});
 		});
 	});
-</script>		
+	const radioTypes = ["disposition1","disposition2","esteem"];
+	radioTypes.forEach(function(type) {
+		dotValues.forEach(function(value) {
+			on(`clicked:${type}_${value}`, function() {
+				setAttrs({
+					[type]: value
+				});
+			});
+		});
+	});
+	
+	on("change:vigor change:will change:composure change:socdefskill change:phydefskill change:vocation change:tactics change:survival change:streetwise change:stealth change:science change:riding change:refinement change:will change:presence change:parley change:mysteries change:melee change:medicine change:investigation change:intuition change:guile change:fisticuffs change:firearms change:focus change:reason change:fencing change:engineering change:command change:burglary change:bureaucracy change:athletics change:artisan change:academics", function(event) {
+		getAttrs(["vigor","will","composure","phydefskill","socdefskill","vocation","tactics","survival","streetwise","stealth","science","riding","refinement","will","presence","parley","mysteries","melee","medicine","investigation","intuition","guile","fisticuffs","firearms","focus","reason","fencing","engineering","command","burglary","bureaucracy","athletics","artisan","academics"], function(currents) {
+			let setObj = {};
+			setObj["compdef"] = 0+parseInt(currents["will"])+parseInt(currents["composure"]);
+			setObj["socdef"] = 0+parseInt(currents["will"])+parseInt(currents[currents["socdefskill"]]);
+			setObj["athdef"] = 0+parseInt(currents["vigor"])+parseInt(currents["athletics"]);
+			setObj["phydef"] = 0+parseInt(currents["vigor"])+parseInt(currents[currents["phydefskill"]]);
+			console.log({setObj});
+			setAttrs(setObj);
+		});
+	});
+	
+	on("change:focus change:repeating_weapons:weaponreach", function(event) {
+		getSectionIDs("weapons",function(idarray) {
+		    let fullarray = [...idarray.map((x) => "repeating_weapons_"+x+"_weaponreach"),"focus"]
+			let weaponadd = "0";
+			console.log(fullarray);
+			getAttrs(fullarray, function(currents) {
+				for(const [key,value] of Object.entries(currents)) { 				
+					if(key === "focus") { continue; }
+					if(value === "touch" || value === "close") { weaponadd = "1" }
+					console.log(`${key}:${value}:${weaponadd}`);
+				};
+				let setObj = {};
+				setObj["guard"] = Math.floor(parseInt(currents["focus"]) / 2);
+				setObj["guardwep"] = weaponadd;
+				setAttrs(setObj);
+			});
+		});
+	});
+</script>											

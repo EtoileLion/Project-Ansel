@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Italiana|Rye&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Italiana|Rye|Cookie&display=swap');
 
 .box {
 	width: 100%;
@@ -11,6 +11,7 @@
 	font-weight: bold;
 	font-size: large;
 	display: flex;
+	text-transform: capitalize;
 }
 input[type="text"] {
 	background-color: transparent;
@@ -18,7 +19,10 @@ input[type="text"] {
 	border-right:none;
 	border-top:none;
 	border-bottom: 2px solid rgb(172,146,20);
+	font-family: Cookie;
+	font-size: large;
 }
+.deftable select,
 label {
 	font-family: Italiana;
 	text-align: center;
@@ -54,20 +58,20 @@ button.dot > span {
 }
 
 /* Hide the "checked" section of the radio if the hidden attribute value is greater than the button value */
-input.dot[value="0"] ~ button.gt-0 > span.checked {
-	display: none;
-}
-input.dot[value="1"] ~ button.gt-1 > span.checked {
-  display: none;
-}
-input.dot[value="2"] ~ button.gt-2 > span.checked {
-  display: none;
-}
-input.dot[value="3"] ~ button.gt-3 > span.checked {
-  display: none;
-}
+.none,
+input[name="attr_guardwep"][value="0"] + button,
+input.dot[value="0"] ~ button.gt-0guard, 
+input.dot[value="1"] ~ button.gt-1guard,
+input.dot[value="2"] ~ button.gt-2guard,
+input.dot[value="0"] ~ button.gt-0 > span.checked, 
+input.dot[value="1"] ~ button.gt-1 > span.checked,
+input.dot[value="2"] ~ button.gt-2 > span.checked,
+input.dot[value="3"] ~ button.gt-3 > span.checked,
 input.dot[value="4"] ~ button.gt-4 > span.checked {
   display: none;
+}
+input.dot[value="0"] ~ input[name="attr_guardwep"][value="0"] ~ .none {
+	display: inline;
 }
 
 .row,.2colrow,.3colrow,.splitrow {
@@ -130,6 +134,10 @@ input.dot[value="4"] ~ button.gt-4 > span.checked {
 }
 .headerrow input {
 	width: 100%;
+	margin-bottom: 5px;
+}
+.headerrow label {
+	margin-bottom: 1px;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -142,12 +150,20 @@ input[type=number]::-webkit-outer-spin-button {
 .floatright {
 	float: right;
 }
+.dispositiondots,
 .flexcontainer {
 	display: flex;
 }
 .flex {
 	flex: 1;
 	margin-right: 2px;
+}
+.logo {
+	width: 150px;
+	height: 100px;
+	border: none;
+	padding: none;
+	margin: none;
 }
 .rightspace {
 	margin-right: 2px;
@@ -172,4 +188,145 @@ input[type=number]::-webkit-outer-spin-button {
 	background-position: 0px 7px;
 	background-repeat: no-repeat;
 	flex: 10;	
+}
+
+.tableesque  {
+	font-family: Italiana;
+	font-size: small;
+	font-weight: bold;
+	flex: 1;
+	text-align: center;
+}
+
+.dispositiondots input {
+	background: transparent;
+	flex: 1;
+}
+.dispositiondots + input {
+	margin-bottom: 10px;
+	width: 100%;
+}
+.dispositiondots .dot,
+button.radio {
+  padding: 0;
+  border: solid 1px #a8a8a8;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(100,50,0,0.3);
+}
+.dispositiondots .dot > span.checked {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(100,0,0,0.3);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;  
+	color: white;
+	font-weight: bold;
+}
+
+button.radio > span.checked {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0,0,100,0.3);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;  
+	color: white;
+	font-weight: bold;
+}
+.guarddot > span.checked {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0,0,100,0.3) !important;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;  
+	color: white;
+	font-weight: bold;	
+}
+
+/* Hide the "checked" section of the radio if the attribute value does not match the radio */
+input.radio[value="1"] ~ button.radio-1 > span.unchecked,
+input.radio[value="2"] ~ button.radio-2 > span.unchecked,
+input.radio[value="3"] ~ button.radio-3 > span.unchecked,
+input.radio[value="4"] ~ button.radio-4 > span.unchecked,
+input.radio[value="5"] ~ button.radio-5 > span.unchecked,
+input.radio:not([value="1"]) ~ button.radio-1 > span.checked,
+input.radio:not([value="2"]) ~ button.radio-2 > span.checked,
+input.radio:not([value="3"]) ~ button.radio-3 > span.checked,
+input.radio:not([value="4"]) ~ button.radio-4 > span.checked,
+input.radio:not([value="5"]) ~ button.radio-5 > span.checked {
+  display: none;
+}
+.deftable,
+.deftable label,
+.socialdesc {
+   width: 100%;
+   text-align: center;
+}
+
+.deftable select {
+	background-color: transparent;
+	width: auto;
+	font-size: 1.2em;
+}
+.weaponselect {
+	background-color: transparent;
+	width: auto;
+	font-family: Cookie;
+	font-size: 1.2em;
+}
+.selwidth {
+	width: 82px;
+	text-align:center;
+}
+.condwidth {
+	width: 150px;
+	text-align: center;
+}
+.numwidth {
+	width: 1.5em;
+	text-align:center;
+}
+.weaponcond {
+	width: 150px;
+	
+}
+.weaponname {
+	width: 100%;
+}
+.weaponhead {
+	font-family: Italiana;
+	font-size: small;
+	font-weight: bold;
+}
+.center {
+	text-align: center !important;
+}
+.blackbox {
+	width: 3.5em !important;
+	border: 2px solid black !important;
+	border-radius: 20% !important;
+}
+.none label {
+	text-align: center !important;
+	color: rgb(150,37,34);
+}
+.none{
+	width:100%;
+	text-align: center;
+}
+.marginbot {
+	margin-bottom: 5px !important;
 }
