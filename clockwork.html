@@ -174,7 +174,7 @@
 				</fieldset>
 			</div>
 			<div class="section">
-		<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div> <span data-i18n="reputations">Reputations</span><div class="headpost"></div><div class="flexspacer"></div></div>			
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div> <span data-i18n="reputations">Reputations</span><div class="headpost"></div><div class="flexspacer"></div></div>			
 				<fieldset class="repeating_reputations" name="repeating_reputations">
 					<div class="flexcontainer">
 						<input type="text" name="attr_reputationname" class="flex">
@@ -237,7 +237,7 @@
 			</div>
 			<div class="section">
 				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="assets">Assets, Liabilities</span><div class="headpost"></div><div class="flexspacer"></div></div>
-			<div class="sectionhead"><div class="flexspacer"></div><span data-i18n="assets2">&amp; Transcendent Powers</span><div class="flexspacer"></div></div>		
+				<div class="sectionhead"><div class="flexspacer"></div><span data-i18n="assets2">&amp; Transcendent Powers</span><div class="flexspacer"></div></div>		
 				<fieldset class="repeating_assets" name="repeating_assets">
 					<div class="flexcontainer">
 						<input type="text" name="attr_membername" class="flex">		
@@ -247,26 +247,34 @@
 			<div class="section">
 				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="weapons">Weapons &amp; Evidence</span><div class="headpost"></div><div class="flexspacer"></div></div>			
 				<div class="weaponhead flexcontainer">
-					<div class="flex" data-i18n="name">Name</div>
+					<div class="flex center" data-i18n="name">Name</div>
+					<div data-i18n="guard"></div>
+				</div>
+				<div class="weaponhead flexcontainer">
 					<div class="selwidth" data-i18n="reach">Reach</div>
 					<div class="numwidth" data-i18n="P">P</div>
 					<div class="numwidth" data-i18n="L">L</div>
-					<div class="condwidth" data-i18n="conditions">Condition(s)</div>
+					<div class="flex center" data-i18n="conditions">Condition(s)</div>
 				</div>
 				<fieldset class="repeating_weapons" name="repeating_weapons">
-					<div class="flexcontainer">
-						<div class="flex inline"><input class="weaponname" type="text" name="attr_weaponname"></div>
-						<select class="weaponselect" name="attr_weaponreach">
-							<option value="touch" data-i18n="touch">Touch</option>
-							<option value="close" data-i18n="close">Close</option>
-							<option value="extend" data-i18n="extended">Extended</option>
-							<option value="short" data-i18n="shortrange">Short Range</option>
-							<option value="long" data-i18n="longrange">Long Range</option>
-							<option value="aoe" data-i18n="aoe">AoE</option>
-						</select>
-						<input type="number" name="attr_weaponpotency" value="0">
-						<input type="number" name="attr_weaponload" value="0">
-						<input type="text" class="weaponcond" name="attr_weaponcond">
+					<div class="weaponwrap">
+						<div class="flexcontainer">
+							<div class="flex inline"><input class="weaponname" type="text" name="attr_weaponname"></div>
+							<input type="checkbox" name="attr_weaponguard">
+						</div>
+						<div class="flexcontainer">
+							<select class="weaponselect" name="attr_weaponreach">
+								<option value="touch" data-i18n="touch">Touch</option>
+								<option value="close" data-i18n="close">Close</option>
+								<option value="extend" data-i18n="extended">Extended</option>
+								<option value="short" data-i18n="shortrange">Short Range</option>
+								<option value="long" data-i18n="longrange">Long Range</option>
+								<option value="aoe" data-i18n="aoe">AoE</option>
+							</select>
+							<input type="number" name="attr_weaponpotency" value="0">
+							<input type="number" name="attr_weaponload" value="0">
+							<input type="text" class="flex minwidth" name="attr_weaponcond">
+						</div>
 					</div>
 				</fieldset>
 			</div>
@@ -1114,7 +1122,7 @@
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition1_2" class="radio radio-2">
-						    <span class="unchecked" data-i18n="G">G</span>
+							<span class="unchecked" data-i18n="G">G</span>
 							<span class="checked" data-i18n="G">G</span>
 						</button>
 						<div class="flexspacer"></div>
@@ -1198,7 +1206,13 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="physicalconflict">Physical Conflict</span><div class="headpost"></div><div class="flexspacer"></div></div>
+					<div class="sectionhead">
+						<div class="flexspacer"></div>
+						<div class="headpre"></div>
+						<span data-i18n="physicalconflict">Physical Conflict</span>
+						<div class="headpost"></div>
+						<div class="flexspacer"></div>
+					</div>
 					<div class="sheet-row center">
 						<div class="socialdesc" data-i18n="physicaldefense">Physical Defense</div>					
 						<div class="weaponhead" data-i18n="vigorskill">Vigor+Skill</div>
@@ -1246,8 +1260,18 @@
 							</tr>
 						</table>					
 					</div>
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="guard">Guard</span><div class="headpost"></div><div class="flexspacer"></div></div>
-				<div class="flexcontainer"><div class="flexspacer"></div><span class="weaponhead" data-i18n="guarddesc">1/2 Focus, +1 for Weapon</span><div class="flexspacer"></div></label></div>
+					<div class="sectionhead">
+						<div class="flexspacer"></div>
+						<div class="headpre"></div>
+						<span data-i18n="guard">Guard</span>
+						<div class="headpost"></div>
+						<div class="flexspacer"></div>
+					</div>
+					<div class="flexcontainer">
+						<div class="flexspacer"></div>
+						<span class="weaponhead" data-i18n="guarddesc">1/2 Focus, +1 for Weapon</span>
+						<div class="flexspacer"></div>
+					</div>
 					<div class="sheet-row">
 						<div class="dispositiondots marginbot">
 							<div class="flexspacer"></div>
@@ -1263,7 +1287,7 @@
 							<button type="action" name="act_guard-3" class="dot gt-0guard gt-1guard gt-2guard">
 								<span class="checked"></span>
 							</button>
-							<input type="hidden" name="attr_guardwep" value="0">
+							<input type="hidden" name="attr_guardwep" value="0" />
 							<button type="action" name="act_guard-wep" class="guarddot dot">
 								<span class="checked"></span>
 							</button>
@@ -1353,15 +1377,15 @@
 		});
 	});
 	
-	on("change:focus change:repeating_weapons:weaponreach", function(event) {
+	on("change:focus change:repeating_weapons:weaponguard", function(event) {
 		getSectionIDs("weapons",function(idarray) {
-		    let fullarray = [...idarray.map((x) => "repeating_weapons_"+x+"_weaponreach"),"focus"]
+		    let fullarray = [...idarray.map((x) => "repeating_weapons_"+x+"_weaponguard"),"focus"]
 			let weaponadd = "0";
 			console.log(fullarray);
 			getAttrs(fullarray, function(currents) {
 				for(const [key,value] of Object.entries(currents)) { 				
 					if(key === "focus") { continue; }
-					if(value === "touch" || value === "close") { weaponadd = "1" }
+					if(value === "on") { weaponadd = "1" }
 					console.log(`${key}:${value}:${weaponadd}`);
 				};
 				let setObj = {};
@@ -1371,4 +1395,4 @@
 			});
 		});
 	});
-</script>											
+</script>																

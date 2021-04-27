@@ -291,23 +291,22 @@ input.radio:not([value="5"]) ~ button.radio-5 > span.checked {
 	font-size: 1.2em;
 }
 .selwidth {
-	width: 82px;
+	width: 92px;
 	text-align:center;
+	margin-left: 4px;
 }
 .condwidth {
 	width: 150px;
 	text-align: center;
 }
 .numwidth {
-	width: 1.5em;
+	width: calc(1.5em + 4px);
 	text-align:center;
-}
-.weaponcond {
-	width: 150px;
-	
 }
 .weaponname {
 	width: 100%;
+	font-weight: bold;
+	text-align: center;
 }
 .socialdesc {
 	font-family: Italiana;
@@ -374,6 +373,14 @@ input.radio:not([value="5"]) ~ button.radio-5 > span.checked {
 .repcontrol_edit:hover {
 	background-image: none;
 	background-color: rgba(100,0,0,0.3);	
+}
+.weaponwrap {
+	border: 1px solid rgb(172,146,20);
+	border-radius: 5%;
+	padding: 3px;
+}
+.minwidth {
+	min-width: 0px;
 }
 /* Temporary fix until i can figure out what's making things "broken" */
 .repitem.repitembroken {
