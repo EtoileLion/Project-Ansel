@@ -306,9 +306,14 @@ input.radio:not([value="5"]) ~ button.radio-5 > span.checked {
 .weaponname {
 	width: 100%;
 }
-.weaponhead {
+.socialdesc {
 	font-family: Italiana;
 	font-size: small;
+	font-weight: bold;
+}
+.weaponhead {
+	font-family: Italiana;
+	font-size: x-small;
 	font-weight: bold;
 }
 .center {
@@ -329,4 +334,26 @@ input.radio:not([value="5"]) ~ button.radio-5 > span.checked {
 }
 .marginbot {
 	margin-bottom: 5px !important;
+}
+.armor {
+	height: 69px;
+	width: 51px;
+	background-image: url("https://raw.githubusercontent.com/EtoileLion/Project-Ansel/master/images/armor.png");
+	line-height: 63px;
+	margin: 0px auto;
+}
+.armor input {
+	border: none !important;
+	text-align: center;
+}
+.shield {
+	height: 69px;
+	width: 51px;
+	background-image: url("https://raw.githubusercontent.com/EtoileLion/Project-Ansel/master/images/shield.png");
+	margin: 0px auto;
+	background-position: 0px 10px;
+    background-repeat: no-repeat;	
+}
+.shield span {
+	line-height: 69px;
 }

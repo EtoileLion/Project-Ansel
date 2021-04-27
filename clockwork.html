@@ -5,15 +5,15 @@
 			<img class="logo" src="https://raw.githubusercontent.com/EtoileLion/Project-Ansel/master/images/CD.png">
 		</div>
 		<div class="col">
-			<label class="sectionhead">Name</label>
+			<label class="sectionhead" data-i18n="name">Name</label>
 			<input type="text" name="attr_character_name">
-			<label class="sectionhead">Pursuit</label>
+			<label class="sectionhead" data-i18n="pursuit">Pursuit</label>
 			<input type="text" name="attr_pursuit">
 		</div>
 		<div class="col">
-			<label class="sectionhead">Bloodline</label>
+			<label class="sectionhead" data-i18n="bloodline">Bloodline</label>
 			<input type="text" name="attr_bloodline">
-			<label class="sectionhead">Background</label>
+			<label class="sectionhead" data-i18n="background">Background</label>
 			<input type="text" name="attr_background">
 		</div>
 	</div>
@@ -21,9 +21,9 @@
 		<div class="col">
 			<div class="twocolrow">
 				<div class="col noright">
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Status<div class="headpost"></div><div class="flexspacer"></div></div>			
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="status">Status</span><div class="headpost"></div><div class="flexspacer"></div></div>			
 					<div class="sheet-row">
-						<label>Class</label>
+						<label data-i18n="class">Class</label>
 						<div class="floatright">
 							<input type="number" name= "attr_classrank" value="0">						
 							<div class="dots">
@@ -47,7 +47,7 @@
 						</div>
 					</div>
 					<div class="sheet-row">
-						<label>Means</label>
+						<label data-i18n="means">Means</label>
 						<div class="floatright">
 							<input type="number" name= "attr_meansrank" value="0">
 							<div class="dots">
@@ -72,9 +72,9 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Potential<div class="headpost"></div><div class="flexspacer"></div></div>
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="potential">Potential</span><div class="headpost"></div><div class="flexspacer"></div></div>
 					<div class="sheet-row">
-						<label>Purpose</label>
+						<label data-i18n="purpose">Purpose</label>
 						<div class="floatright">
 							<input type="number" name= "attr_purposerank" value="0">
 							<div class="dots">
@@ -98,7 +98,7 @@
 						</div>
 					</div>
 					<div class="sheet-row">
-						<label>Ether</label>
+						<label data-i18n="ether">Ether</label>
 						<div class="floatright">
 							<input type="number" name= "attr_etherrank" value="0">
 							<div class="dots">
@@ -122,7 +122,7 @@
 						</div>
 					</div>
 					<div class="sheet-row">
-						<label>Corruption</label>
+						<label data-i18n="corruption">Corruption</label>
 						<div class="floatright">							
 							<div class="dots">
 								<input type="hidden" name="attr_corruption" class="dot" value="0" />
@@ -147,7 +147,7 @@
 				</div>
 			</div>
 			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Memberships<div class="headpost"></div><div class="flexspacer"></div></div>			
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="memberships">Memberships</span><div class="headpost"></div><div class="flexspacer"></div></div>			
 				<fieldset class="repeating_memberships" name="repeating_memberships">
 					<div class="flexcontainer">
 						<input type="text" name="attr_membername" class="flex">
@@ -174,7 +174,7 @@
 				</fieldset>
 			</div>
 			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Reputations<div class="headpost"></div><div class="flexspacer"></div></div>			
+		<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div> <span data-i18n="reputations">Reputations</span><div class="headpost"></div><div class="flexspacer"></div></div>			
 				<fieldset class="repeating_reputations" name="repeating_reputations">
 					<div class="flexcontainer">
 						<input type="text" name="attr_reputationname" class="flex">
@@ -201,7 +201,7 @@
 				</fieldset>
 			</div>
 			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Affinities<div class="headpost"></div><div class="flexspacer"></div></div>			
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="affinities">Affinities</span><div class="headpost"></div><div class="flexspacer"></div></div>			
 				<fieldset class="repeating_affinities" name="repeating_affinities">
 					<div class="flexcontainer">
 						<input type="text" name="attr_affinityname" class="flex">
@@ -228,7 +228,7 @@
 				</fieldset>
 			</div>
 			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Blessings, Curses <br>&amp; Masteries<div class="headpost"></div><div class="flexspacer"></div></div>
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="blessings">Blessings, Curses <br>&amp; Masteries</span><div class="headpost"></div><div class="flexspacer"></div></div>
 				<fieldset class="repeating_blessings" name="repeating_blessings">
 					<div class="flexcontainer">
 						<input type="text" name="attr_blessname" class="flex">
@@ -236,8 +236,8 @@
 				</fieldset>
 			</div>
 			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Assets, Liabilities<div class="headpost"></div><div class="flexspacer"></div></div>
-				<div class="sectionhead"><div class="flexspacer"></div>&amp; Transcendent Powers	<div class="flexspacer"></div></div>		
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="assets">Assets, Liabilities</span><div class="headpost"></div><div class="flexspacer"></div></div>
+			<div class="sectionhead"><div class="flexspacer"></div><span data-i18n="assets2">&amp; Transcendent Powers</span><div class="flexspacer"></div></div>		
 				<fieldset class="repeating_assets" name="repeating_assets">
 					<div class="flexcontainer">
 						<input type="text" name="attr_membername" class="flex">		
@@ -245,24 +245,24 @@
 				</fieldset>
 			</div>
 			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Weapons &amp; Evidence<div class="headpost"></div><div class="flexspacer"></div></div>			
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="weapons">Weapons &amp; Evidence</span><div class="headpost"></div><div class="flexspacer"></div></div>			
 				<div class="weaponhead flexcontainer">
-					<div class="flex">Name</div>
-					<div class="selwidth">Range</div>
-					<div class="numwidth">P</div>
-					<div class="numwidth">L</div>
-					<div class="condwidth">Condition(s)</div>
+					<div class="flex" data-i18n="name">Name</div>
+					<div class="selwidth" data-i18n="reach">Reach</div>
+					<div class="numwidth" data-i18n="P">P</div>
+					<div class="numwidth" data-i18n="L">L</div>
+					<div class="condwidth" data-i18n="conditions">Condition(s)</div>
 				</div>
 				<fieldset class="repeating_weapons" name="repeating_weapons">
 					<div class="flexcontainer">
 						<div class="flex inline"><input class="weaponname" type="text" name="attr_weaponname"></div>
 						<select class="weaponselect" name="attr_weaponreach">
-							<option value="touch">Touch</option>
-							<option value="close">Close</option>
-							<option value="extend">Extended</option>
-							<option value="short">Short Range</option>
-							<option value="long">Long Range</option>
-							<option value="aoe">AoE</option>
+							<option value="touch" data-i18n="touch">Touch</option>
+							<option value="close" data-i18n="close">Close</option>
+							<option value="extend" data-i18n="extended">Extended</option>
+							<option value="short" data-i18n="shortrange">Short Range</option>
+							<option value="long" data-i18n="longrange">Long Range</option>
+							<option value="aoe" data-i18n="aoe">AoE</option>
 						</select>
 						<input type="number" name="attr_weaponpotency" value="0">
 						<input type="number" name="attr_weaponload" value="0">
@@ -272,11 +272,11 @@
 			</div>
 		</div>
 		<div class="col">
-			<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Aptitudes<div class="headpost"></div><div class="flexspacer"></div></div>
+			<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="aptitudes">Aptitudes</span><div class="headpost"></div><div class="flexspacer"></div></div>
 			<div class="threecolrow">
 				<div class="col">
 					<div class="twocolrow">
-						<div class="col"><label>Grace</label></div>
+						<div class="col"><label data-i18n="grace">Grace</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_grace" class="dot" value="1" />
@@ -299,7 +299,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Vigor</label></div>
+						<div class="col"><label data-i18n="vigor">Vigor</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_vigor" class="dot" value="1" />
@@ -324,7 +324,7 @@
 				</div>
 				<div class="col">
 					<div class="twocolrow">
-						<div class="col"><label>Reason</label></div>
+						<div class="col"><label data-i18n="reason">Reason</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_reason" class="dot" value="1" />
@@ -347,7 +347,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Focus</label></div>
+						<div class="col"><label data-i18n="focus">Focus</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_focus" class="dot" value="1" />
@@ -372,7 +372,7 @@
 				</div>
 				<div class="col">
 					<div class="twocolrow">
-						<div class="col"><label>Presence</label></div>
+						<div class="col"><label data-i18n="presence">Presence</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_presence" class="dot" value="1" />
@@ -395,7 +395,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Will</label></div>
+						<div class="col"><label data-i18n="will">Will</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_will" class="dot" value="1" />
@@ -419,11 +419,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Skills<div class="headpost"></div><div class="flexspacer"></div></div>
+			<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="skills">Skills</span><div class="headpost"></div><div class="flexspacer"></div></div>
 			<div class="threecolrow">
 				<div class="col">
 					<div class="twocolrow">
-						<div class="col"><label>Academics</label></div>
+						<div class="col"><label data-i18n="academics">Academics</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_academics" class="dot" value="0" />
@@ -446,7 +446,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Artisan</label></div>
+						<div class="col"><label data-i18n="artisan">Artisan</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_artisan" class="dot" value="0" />
@@ -469,7 +469,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Athletics</label></div>
+						<div class="col"><label data-i18n="athletics">Athletics</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_athletics" class="dot" value="0" />
@@ -492,7 +492,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Bureaucracy</label></div>
+						<div class="col"><label data-i18n="bureaucracy">Bureaucracy</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_bureaucracy" class="dot" value="0" />
@@ -515,7 +515,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Burglary</label></div>
+						<div class="col"><label data-i18n="burglary">Burglary</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_burglary" class="dot" value="0" />
@@ -538,7 +538,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Command</label></div>
+						<div class="col"><label data-i18n="command">Command</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_command" class="dot" value="0" />
@@ -561,7 +561,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Composure</label></div>
+						<div class="col"><label data-i18n="composure">Composure</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_composure" class="dot" value="0" />
@@ -584,7 +584,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Engineering</label></div>
+						<div class="col"><label data-i18n="engineering">Engineering</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_engineering" class="dot" value="0" />
@@ -607,7 +607,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Fencing</label></div>
+						<div class="col"><label data-i18n="fencing">Fencing</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_fencing" class="dot" value="0" />
@@ -632,7 +632,7 @@
 				</div>
 				<div class="col">
 					<div class="twocolrow">
-						<div class="col"><label>Firearms</label></div>
+						<div class="col"><label data-i18n="firearms">Firearms</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_firearms" class="dot" value="0" />
@@ -655,7 +655,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Fisticuffs</label></div>
+						<div class="col"><label data-i18n="fisticuffs">Fisticuffs</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_fisticuffs" class="dot" value="0" />
@@ -678,7 +678,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Guile</label></div>
+						<div class="col"><label data-i18n="guile">Guile</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_guile" class="dot" value="0" />
@@ -701,7 +701,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Intuition</label></div>
+						<div class="col"><label data-i18n="intuition">Intuition</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_intuition" class="dot" value="0" />
@@ -724,7 +724,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Investigation</label></div>
+						<div class="col"><label data-i18n="investigation">Investigation</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_investigation" class="dot" value="0" />
@@ -747,7 +747,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Medicine</label></div>
+						<div class="col"><label data-i18n="medicine">Medicine</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_medicine" class="dot" value="0" />
@@ -770,7 +770,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Melee</label></div>
+						<div class="col"><label data-i18n="melee">Melee</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_melee" class="dot" value="0" />
@@ -793,7 +793,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Mysteries</label></div>
+						<div class="col"><label data-i18n="mysteries">Mysteries</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_mysteries" class="dot" value="0" />
@@ -816,7 +816,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Parley</label></div>
+						<div class="col"><label data-i18n="parley">Parley</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_parley" class="dot" value="0" />
@@ -841,7 +841,7 @@
 				</div>
 				<div class="col">
 					<div class="twocolrow">
-						<div class="col"><label>Refinement</label></div>
+						<div class="col"><label data-i18n="refinement">Refinement</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_refinement" class="dot" value="0" />
@@ -864,7 +864,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Riding</label></div>
+						<div class="col"><label data-i18n="riding">Riding</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_riding" class="dot" value="0" />
@@ -887,7 +887,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Science</label></div>
+						<div class="col"><label data-i18n="science">Science</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_science" class="dot" value="0" />
@@ -910,7 +910,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Stealth</label></div>
+						<div class="col"><label data-i18n="stealth">Stealth</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_stealth" class="dot" value="0" />
@@ -933,7 +933,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Streetwise</label></div>
+						<div class="col"><label data-i18n="streetwise">Streetwise</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_streetwise" class="dot" value="0" />
@@ -956,7 +956,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Survival</label></div>
+						<div class="col"><label data-i18n="survival">Survival</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_survival" class="dot" value="0" />
@@ -979,7 +979,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Tactics</label></div>
+						<div class="col"><label data-i18n="tactics">Tactics</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_tactics" class="dot" value="0" />
@@ -1002,7 +1002,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Temptation</label></div>
+						<div class="col"><label data-i18n="temptation">Temptation</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_temptation" class="dot" value="0" />
@@ -1025,7 +1025,7 @@
 						</div>
 					</div>
 					<div class="twocolrow">
-						<div class="col"><label>Vocation</label></div>
+						<div class="col"><label data-i18n="vocation">Vocation</label></div>
 						<div class="dotcol">							
 							<div class="dots">
 								<input type="hidden" name="attr_vocation" class="dot" value="0" />
@@ -1051,87 +1051,86 @@
 			</div>
 			<div class="twocolrow">
 				<div class="col">
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Social Conflict<div class="headpost"></div><div class="flexspacer"></div></div>
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="socialconflict">Social Conflict</span><div class="headpost"></div><div class="flexspacer"></div></div>
 					<div class="sheet-row center">
-						<div class="socialdesc">Social Defense</div>
-						<div class="weaponhead">Will+Skill</div>
+						<div class="socialdesc" data-i18n="socialdefense">Social Defense</div>
+						<div class="weaponhead" data-i18n="willskill">Will+Skill</div>
 						<table class="deftable">
 							<tr>
-								<td class="shield"><span name="attr_compdef"></span></td>
-								<td class="shield"><span name="attr_socdef"></span></td>
+								<td><div class="shield"><span name="attr_compdef">1</span></div></td>
+								<td><div class="shield"><span name="attr_socdef">1</span></div></td>
 							</tr>
 							<tr>
-								<td><label>Composure</label></td>
+								<td><label data-i18n="composure">Composure</label></td>
 								<td><select name="attr_socdefskill">
-									<option value="academics">Academics</option>
-									<option value="artisan">Artisan</option>
-									<option value="athletics">Athletics</option>
-									<option value="bureaucracy">Bureaucracy</option>
-									<option value="burglary">Burglary</option>
-									<option value="command">Command</option>
-									<option value="composure">Composure</option>
-									<option value="engineering">Engineering</option>
-									<option value="fencing">Fencing</option>
-									<option value="firearms">Firearms</option>
-									<option value="fisticuffs">Fisticuffs</option>
-									<option value="focus">Focus</option>
-									<option value="guile">Guile</option>
-									<option value="intuition">Intuition</option>
-									<option value="investigation">Investigation</option>
-									<option value="medicine">Medicine</option>
-									<option value="melee">Melee</option>
-									<option value="mysteries">Mysteries</option>
-									<option value="parley">Parley</option>
-									<option value="presence">Presence</option>
-									<option value="refinement">Refinement</option>
-									<option value="reason">Reason</option>
-									<option value="riding">Riding</option>
-									<option value="science">Science</option>
-									<option value="stealth">Stealth</option>
-									<option value="streetwise">Streetwise</option>
-									<option value="survival">Survival</option>
-									<option value="tactics">Tactics</option>
-									<option value="vocation">Vocation</option>
-									<option value="will">Will</option>
+									<option value="academics" data-i18n="academics">Academics</option>
+									<option value="artisan" data-i18n="artisan">Artisan</option>
+									<option value="athletics" data-i18n="athletics">Athletics</option>
+									<option value="bureaucracy" data-i18n="bureaucracy">Bureaucracy</option>
+									<option value="burglary" data-i18n="burglary">Burglary</option>
+									<option value="command" data-i18n="command">Command</option>
+									<option value="composure" data-i18n="composure">Composure</option>
+									<option value="engineering" data-i18n="engineering">Engineering</option>
+									<option value="fencing" data-i18n="fencing">Fencing</option>
+									<option value="firearms" data-i18n="firearms">Firearms</option>
+									<option value="fisticuffs" data-i18n="fisticuffs">Fisticuffs</option>
+									<option value="focus" data-i18n="focus">Focus</option>
+									<option value="guile" data-i18n="guile">Guile</option>
+									<option value="intuition" data-i18n="intuition">Intuition</option>
+									<option value="investigation" data-i18n="investigation">Investigation</option>
+									<option value="medicine" data-i18n="medicine">Medicine</option>
+									<option value="melee" data-i18n="melee">Melee</option>
+									<option value="mysteries" data-i18n="mysteries">Mysteries</option>
+									<option value="parley" data-i18n="parley">Parley</option>
+									<option value="presence" data-i18n="presence">Presence</option>
+									<option value="refinement" data-i18n="refinement">Refinement</option>
+									<option value="reason" data-i18n="reason">Reason</option>
+									<option value="riding" data-i18n="riding">Riding</option>
+									<option value="science" data-i18n="science">Science</option>
+									<option value="stealth" data-i18n="stealth">Stealth</option>
+									<option value="streetwise" data-i18n="streetwise">Streetwise</option>
+									<option value="survival" data-i18n="survival">Survival</option>
+									<option value="tactics" data-i18n="tactics">Tactics</option>
+									<option value="vocation" data-i18n="vocation">Vocation</option>
 								</select>
 								</td>
 							</tr>
 						</table>
 					</div>
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Dispositions<div class="headpost"></div><div class="flexspacer"></div></div>
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="dispositions">Dispositions</span><div class="headpost"></div><div class="flexspacer"></div></div>
 					<div class="flexcontainer" style="clear: both;">
-						<div class="tableesque">Hostile</div>
-						<div class="tableesque">Guarded</div>
-						<div class="tableesque">Indifferent</div>
-						<div class="tableesque">Agreeable</div>
-						<div class="tableesque">Favorable</div>				
+						<div class="tableesque" data-i18n="hostile">Hostile</div>
+						<div class="tableesque" data-i18n="guarded">Guarded</div>
+						<div class="tableesque" data-i18n="indifferent">Indifferent</div>
+						<div class="tableesque" data-i18n="agreeable">Agreeable</div>
+						<div class="tableesque" data-i18n="favorable">Favorable</div>				
 					</div>
 					<div class="dispositiondots">													
 						<input type="hidden" class="radio" name="attr_disposition1" value="3" />
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition1_1" class="radio radio-1">
-							<span class="unchecked">H</span>
-							<span class="checked">H</span>
+							<span class="unchecked" data-i18n="H">H</span>
+							<span class="checked" data-i18n="H">H</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition1_2" class="radio radio-2">
-						    <span class="unchecked">G</span>
-							<span class="checked">G</span>
+						    <span class="unchecked" data-i18n="G">G</span>
+							<span class="checked" data-i18n="G">G</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition1_3" class="radio radio-3">
-							<span class="unchecked">I</span>
-							<span class="checked">I</span>
+							<span class="unchecked" data-i18n="I">I</span>
+							<span class="checked" data-i18n="I">I</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition1_4" class="radio radio-4">
-							<span class="unchecked">A</span>
-							<span class="checked">A</span>
+							<span class="unchecked" data-i18n="A">A</span>
+							<span class="checked" data-i18n="A">A</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition1_5" class="radio radio-5">
-							<span class="unchecked">F</span>
-							<span class="checked">F</span>
+							<span class="unchecked" data-i18n="F">F</span>
+							<span class="checked" data-i18n="F">F</span>
 						</button>
 						<div class="flexspacer"></div>
 					</div>
@@ -1140,120 +1139,119 @@
 						<input type="hidden" class="radio" name="attr_disposition2" value="3" />
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition2_1" class="radio radio-1">
-							<span class="unchecked">H</span>
-							<span class="checked">H</span>
+							<span class="unchecked" data-i18n="H">H</span>
+							<span class="checked" data-i18n="H">H</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition2_2" class="radio radio-2">
-							<span class="unchecked">G</span>
-							<span class="checked">G</span>
+							<span class="unchecked" data-i18n="G">G</span>
+							<span class="checked" data-i18n="G">G</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition2_3" class="radio radio-3">
-							<span class="unchecked">I</span>
-							<span class="checked">I</span>
+							<span class="unchecked" data-i18n="I">I</span>
+							<span class="checked" data-i18n="I">I</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition2_4" class="radio radio-4">
-							<span class="unchecked">A</span>
-							<span class="checked">A</span>
+							<span class="unchecked" data-i18n="A">A</span>
+							<span class="checked" data-i18n="A">A</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_disposition2_5" class="radio radio-5">
-							<span class="unchecked">F</span>
-							<span class="checked">F</span>
+							<span class="unchecked" data-i18n="F">F</span>
+							<span class="checked" data-i18n="F">F</span>
 						</button>
 						<div class="flexspacer"></div>
 					</div>
 					<input type="text" name="attr_disposition2name">	
-					<label>Esteem <span class="box"></span></label>
+					<label data-i18n="Esteem">Esteem</label>
 					<div class="dispositiondots">
 						<input type="hidden" class="radio" name="attr_esteem" value="3" />
 						<div class="flexspacer"></div>
 						<button type="action" name="act_esteem_1" class="radio radio-1">
-							<span class="unchecked">H</span>
-							<span class="checked">H</span>
+							<span class="unchecked" data-i18n="H">H</span>
+							<span class="checked" data-i18n="H">H</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_esteem_2" class="radio radio-2">
-							<span class="unchecked">G</span>
-							<span class="checked">G</span>
+							<span class="unchecked" data-i18n="G">G</span>
+							<span class="checked" data-i18n="G">G</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_esteem_3" class="radio radio-3">
-							<span class="unchecked">I</span>
-							<span class="checked">I</span>
+							<span class="unchecked" data-i18n="I">I</span>
+							<span class="checked" data-i18n="I">I</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_esteem_4" class="radio radio-4">
-							<span class="unchecked">A</span>
-							<span class="checked">A</span>
+							<span class="unchecked" data-i18n="A">A</span>
+							<span class="checked" data-i18n="A">A</span>
 						</button>
 						<div class="flexspacer"></div>
 						<button type="action" name="act_esteem_5" class="radio radio-5">
-							<span class="unchecked">F</span>
-							<span class="checked">F</span>
+							<span class="unchecked" data-i18n="F">F</span>
+							<span class="checked" data-i18n="F">F</span>
 						</button>
 						<div class="flexspacer"></div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Physical Conflict<div class="headpost"></div><div class="flexspacer"></div></div>
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="physicalconflict">Physical Conflict</span><div class="headpost"></div><div class="flexspacer"></div></div>
 					<div class="sheet-row center">
-						<div class="socialdesc">Physical Defense</div>					
-						<div class="weaponhead">Vigor+Skill</div>
+						<div class="socialdesc" data-i18n="physicaldefense">Physical Defense</div>					
+						<div class="weaponhead" data-i18n="vigorskill">Vigor+Skill</div>
 						<table class="deftable">
 							<tr>
-								<td class="shield"><span name="attr_athdef"></span></td>
-								<td class="shield"><span name="attr_phydef"></span></td>
-								<td class="armor"><input type="number" name="attr_armor" value="0"></td>
+								<td><div class="shield"><span name="attr_athdef">1</span></div></td>
+								<td><div class="shield"><span name="attr_phydef">1</span></div></td>
+								<td><div class="armor"><input type="number" name="attr_armor" value="0"></div></td>
 							</tr>
 							<tr>
-								<td><label>Athletics</label></td>
+								<td><label data-i18n="athletics">Athletics</label></td>
 								<td><select name="attr_phydefskill">
-									<option value="academics">Academics</option>
-									<option value="artisan">Artisan</option>
-									<option value="athletics">Athletics</option>
-									<option value="bureaucracy">Bureaucracy</option>
-									<option value="burglary">Burglary</option>
-									<option value="command">Command</option>
-									<option value="composure">Composure</option>
-									<option value="engineering">Engineering</option>
-									<option value="fencing">Fencing</option>
-									<option value="firearms">Firearms</option>
-									<option value="fisticuffs">Fisticuffs</option>
-									<option value="focus">Focus</option>
-									<option value="guile">Guile</option>
-									<option value="intuition">Intuition</option>
-									<option value="investigation">Investigation</option>
-									<option value="medicine">Medicine</option>
-									<option value="melee">Melee</option>
-									<option value="mysteries">Mysteries</option>
-									<option value="parley">Parley</option>
-									<option value="presence">Presence</option>
-									<option value="refinement">Refinement</option>
-									<option value="reason">Reason</option>
-									<option value="riding">Riding</option>
-									<option value="science">Science</option>
-									<option value="stealth">Stealth</option>
-									<option value="streetwise">Streetwise</option>
-									<option value="survival">Survival</option>
-									<option value="tactics">Tactics</option>
-									<option value="vocation">Vocation</option>
-									<option value="will">Will</option>
+									<option value="academics" data-i18n="academics">Academics</option>
+									<option value="artisan" data-i18n="artisan">Artisan</option>
+									<option value="athletics" data-i18n="athletics">Athletics</option>
+									<option value="bureaucracy" data-i18n="bureaucracy">Bureaucracy</option>
+									<option value="burglary" data-i18n="burglary">Burglary</option>
+									<option value="command" data-i18n="command">Command</option>
+									<option value="composure" data-i18n="composure">Composure</option>
+									<option value="engineering" data-i18n="engineering">Engineering</option>
+									<option value="fencing" data-i18n="fencing">Fencing</option>
+									<option value="firearms" data-i18n="firearms">Firearms</option>
+									<option value="fisticuffs" data-i18n="fisticuffs">Fisticuffs</option>
+									<option value="focus" data-i18n="focus">Focus</option>
+									<option value="guile" data-i18n="guile">Guile</option>
+									<option value="intuition" data-i18n="intuition">Intuition</option>
+									<option value="investigation" data-i18n="investigation">Investigation</option>
+									<option value="medicine" data-i18n="medicine">Medicine</option>
+									<option value="melee" data-i18n="melee">Melee</option>
+									<option value="mysteries" data-i18n="mysteries">Mysteries</option>
+									<option value="parley" data-i18n="parley">Parley</option>
+									<option value="presence" data-i18n="presence">Presence</option>
+									<option value="refinement" data-i18n="refinement">Refinement</option>
+									<option value="reason" data-i18n="reason">Reason</option>
+									<option value="riding" data-i18n="riding">Riding</option>
+									<option value="science" data-i18n="science">Science</option>
+									<option value="stealth" data-i18n="stealth">Stealth</option>
+									<option value="streetwise" data-i18n="streetwise">Streetwise</option>
+									<option value="survival" data-i18n="survival">Survival</option>
+									<option value="tactics" data-i18n="tactics">Tactics</option>
+									<option value="vocation" data-i18n="vocation">Vocation</option>
 								</select>
 								</td>
-								<td><label>Armor</label></td>
+								<td><label data-i18n="armor">Armor</label></td>
 							</tr>
 						</table>					
 					</div>
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div>Guard<div class="headpost"></div><div class="flexspacer"></div></div>
-				<div class="flexcontainer"><div class="flexspacer"></div><span class="weaponhead">1/2 Focus, +1 for Weapon</span><div class="flexspacer"></div></label></div>
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="guard">Guard</span><div class="headpost"></div><div class="flexspacer"></div></div>
+				<div class="flexcontainer"><div class="flexspacer"></div><span class="weaponhead" data-i18n="guarddesc">1/2 Focus, +1 for Weapon</span><div class="flexspacer"></div></label></div>
 					<div class="sheet-row">
 						<div class="dispositiondots marginbot">
 							<div class="flexspacer"></div>
 							<input type="hidden" name="attr_guard" class="dot" value="0" />
-							<div class="none"><label class="center">Guard Down</label></div>
+							<div class="none"><label class="center" data-i18n="guarddown">Guard Down</label></div>
 							<button type="action" name="act_guard-1" class="dot gt-0guard">
 								<span class="checked"></span>
 							</button>
@@ -1271,7 +1269,7 @@
 						</div>
 					</div>
 					<div class="sheet-row">
-						<label>Wounds</label>
+						<label data-i18n="wounds">Wounds</label>
 						<div class="dispositiondots marginbot">
 							<div class="flexspacer"></div>
 							<input type="hidden" name="attr_wound" class="dot" value="0" />
@@ -1294,14 +1292,14 @@
 						</div>	
 					</div>
 					<div class="sheet-row">
-						<label>Wound Penalties</label>
+						<label data-i18n="woundpenalties">Wound Penalties</label>
 						<input type="number" name="attr_woundpenalty" class="blackbox marginbot" style="width: 3.5em !important" value="0">
 					</div>
 					<div class="sheet-row">
-						<label>Experience Points</label>
+						<label data-i18n="xp">Experience Points</label>
 						<input type="number" name="attr_xp" class="blackbox marginbot" style="width: 3.5em !important" value="0">
 					</div>
-					<div class="sectionhead"><div class="flexspacer"></div>Persistent Conditions<div class="flexspacer"></div></div>
+					<div class="sectionhead"><div class="flexspacer"></div><span data-i18n="persistentconditions">Persistent Conditions</span><div class="flexspacer"></div></div>
 					<fieldset class="repeating_conditions" name="repeating_conditions">
 						<input type="text" name="attr_condition">
 					</fieldset>				
