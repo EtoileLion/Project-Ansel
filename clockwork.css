@@ -31,6 +31,9 @@ label {
 .dots{
   display:inline-flex;
 }
+.inline {
+	display: inline !important;
+}
 /* Configure the button styling. This example makes it look like a radio. */
 button.dot {
   padding: 0;
@@ -50,6 +53,7 @@ button.dot > span {
   border-radius: 29%;
   background-color: rgb(150,37,34);
 }
+.weaponwrap input[type="number"],
 .col input[type="number"] {
 	width: 1.5em !important;
 	background-color: transparent;
@@ -59,6 +63,8 @@ button.dot > span {
 
 /* Hide the "checked" section of the radio if the hidden attribute value is greater than the button value */
 .none,
+input[name="attr_sheettype"][value="pc"] ~ .npcsheet,
+input[name="attr_sheettype"][value="npc"] ~ .pcsheet,
 input[name="attr_guardwep"][value="0"] ~ button.guardwepdot,
 input.dot[value="0"] ~ button.gt-0guard, 
 input.dot[value="1"] ~ button.gt-1guard,
@@ -311,7 +317,7 @@ input.radio:not([value="5"]) ~ button.radio-5 > span.checked {
    width: 100%;
    text-align: center;
 }
-
+.headerrow select,
 .deftable select {
 	background-color: transparent;
 	width: auto;
@@ -415,7 +421,9 @@ input.radio:not([value="5"]) ~ button.radio-5 > span.checked {
 .minwidth {
 	min-width: 0px;
 }
-/* Temporary fix until i can figure out what's making things "broken" */
-.repitem.repitembroken {
-    border: none !important;
+.npcsheet textarea {
+	width: 99%;
+	background-color: rgba(0,0,0,0.1);
+	font-family: Cookie;
+	font-size: large;
 }

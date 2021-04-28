@@ -1,1345 +1,1865 @@
 <div class="box">
-	<div class="headerrow">
-		<div class="col">
-			<!-- headimg -->
-			<img class="logo" src="https://raw.githubusercontent.com/EtoileLion/Project-Ansel/master/images/CD.png">
+	<input type="hidden" name="attr_sheettype" value="pc">
+	<div class="pcsheet">
+		<div class="headerrow">
+			<div class="col">
+				<!-- headimg -->
+				<img class="logo" src="https://raw.githubusercontent.com/EtoileLion/Project-Ansel/master/images/CD.png">
+				<select name="attr_sheettype">
+					<option value="pc" selected>PC</option>
+					<option value="npc">NPC</option>				
+				</select>
+			</div>
+			<div class="col">
+				<label class="sectionhead" data-i18n="name">Name</label>
+				<input type="text" name="attr_character_name">
+				<label class="sectionhead" data-i18n="pursuit">Pursuit</label>
+				<input type="text" name="attr_pursuit">
+			</div>
+			<div class="col">
+				<label class="sectionhead" data-i18n="bloodline">Bloodline</label>
+				<input type="text" name="attr_bloodline">
+				<label class="sectionhead" data-i18n="background">Background</label>
+				<input type="text" name="attr_background">
+			</div>
 		</div>
-		<div class="col">
-			<label class="sectionhead" data-i18n="name">Name</label>
-			<input type="text" name="attr_character_name">
-			<label class="sectionhead" data-i18n="pursuit">Pursuit</label>
-			<input type="text" name="attr_pursuit">
-		</div>
-		<div class="col">
-			<label class="sectionhead" data-i18n="bloodline">Bloodline</label>
-			<input type="text" name="attr_bloodline">
-			<label class="sectionhead" data-i18n="background">Background</label>
-			<input type="text" name="attr_background">
+		<div class="splitrow">
+			<div class="col">
+				<div class="twocolrow">
+					<div class="col noright">
+						<div class="sectionhead"><div class="flexspacer"></div><div clas7s="headpre"></div><span data-i18n="status">Status</span><div class="headpost"></div><div class="flexspacer"></div></div>			
+						<div class="sheet-row">
+							<label data-i18n="class">Class</label>
+							<div class="floatright">
+								<input type="number" name= "attr_classrank" value="0">						
+								<div class="dots">
+									<input type="hidden" name="attr_classtemp" class="dot" value="0" />
+									<button type="action" name="act_classtemp-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_classtemp-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_classtemp-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_classtemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_classtemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="sheet-row">
+							<label data-i18n="means">Means</label>
+							<div class="floatright">
+								<input type="number" name= "attr_meansrank" value="0">
+								<div class="dots">
+									<input type="hidden" name="attr_meanstemp" class="dot" value="0" />
+									<button type="action" name="act_meanstemp-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_meanstemp-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_meanstemp-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_meanstemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_meanstemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="potential">Potential</span><div class="headpost"></div><div class="flexspacer"></div></div>
+						<div class="sheet-row">
+							<label data-i18n="purpose">Purpose</label>
+							<div class="floatright">
+								<input type="number" name= "attr_purposerank" value="0">
+								<div class="dots">
+									<input type="hidden" name="attr_purposetemp" class="dot" value="0" />
+									<button type="action" name="act_purposetemp-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_purposetemp-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_purposetemp-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_purposetemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_purposetemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="sheet-row">
+							<label data-i18n="ether">Ether</label>
+							<div class="floatright">
+								<input type="number" name= "attr_etherrank" value="0">
+								<div class="dots">
+									<input type="hidden" name="attr_ethertemp" class="dot" value="0" />
+									<button type="action" name="act_ethertemp-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_ethertemp-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_ethertemp-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_ethertemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_ethertemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="sheet-row">
+							<label data-i18n="corruption">Corruption</label>
+							<div class="floatright">							
+								<div class="dots">
+									<input type="hidden" name="attr_corruption" class="dot" value="0" />
+									<button type="action" name="act_corruption-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_corruption-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_corruption-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_corruption-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_corruption-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="memberships">Memberships</span><div class="headpost"></div><div class="flexspacer"></div></div>			
+					<fieldset class="repeating_memberships" name="repeating_memberships">
+						<div class="flexcontainer">
+							<input type="text" name="attr_membername" class="flex">
+							<input type="number" name= "attr_memberank" value="1" class="rightspace">
+							<div class="dots">
+								<input type="hidden" name="attr_membertemp" class="dot" value="0" />
+								<button type="action" name="act_membertemp-1" class="dot gt-0">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_membertemp-2" class="dot gt-0 gt-1">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_membertemp-3" class="dot gt-0 gt-1 gt-2">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_membertemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_membertemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+									<span class="checked"></span>
+								</button>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div class="section">
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div> <span data-i18n="reputations">Reputations</span><div class="headpost"></div><div class="flexspacer"></div></div>			
+					<fieldset class="repeating_reputations" name="repeating_reputations">
+						<div class="flexcontainer">
+							<input type="text" name="attr_reputationname" class="flex">
+							<input type="number" name= "attr_reputationank" value="1" class="rightspace">
+							<div class="dots">
+								<input type="hidden" name="attr_reputationtemp" class="dot" value="0" />
+								<button type="action" name="act_reputationtemp-1" class="dot gt-0">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_reputationtemp-2" class="dot gt-0 gt-1">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_reputationtemp-3" class="dot gt-0 gt-1 gt-2">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_reputationtemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_reputationtemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+									<span class="checked"></span>
+								</button>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div class="section">
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="affinities">Affinities</span><div class="headpost"></div><div class="flexspacer"></div></div>			
+					<fieldset class="repeating_affinities" name="repeating_affinities">
+						<div class="flexcontainer">
+							<input type="text" name="attr_affinityname" class="flex">
+							<input type="number" name= "attr_affinityank" value="1" class="rightspace">
+							<div class="dots">
+								<input type="hidden" name="attr_affinitytemp" class="dot" value="0" />
+								<button type="action" name="act_affinitytemp-1" class="dot gt-0">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_affinitytemp-2" class="dot gt-0 gt-1">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_affinitytemp-3" class="dot gt-0 gt-1 gt-2">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_affinitytemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_affinitytemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+									<span class="checked"></span>
+								</button>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div class="section">
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="blessings">Blessings, Curses <br>&amp; Masteries</span><div class="headpost"></div><div class="flexspacer"></div></div>
+					<fieldset class="repeating_blessings" name="repeating_blessings">
+						<div class="flexcontainer">
+							<input type="text" name="attr_blessname" class="flex">
+						</div>
+					</fieldset>
+				</div>
+				<div class="section">
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="assets">Assets, Liabilities</span><div class="headpost"></div><div class="flexspacer"></div></div>
+					<div class="sectionhead"><div class="flexspacer"></div><span data-i18n="assets2">&amp; Transcendent Powers</span><div class="flexspacer"></div></div>		
+					<fieldset class="repeating_assets" name="repeating_assets">
+						<div class="flexcontainer">
+							<input type="text" name="attr_membername" class="flex">		
+						</div>
+					</fieldset>
+				</div>
+				<div class="section">
+					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="weapons">Weapons &amp; Evidence</span><div class="headpost"></div><div class="flexspacer"></div></div>			
+					<div class="weaponhead flexcontainer">
+						<div class="flex center" data-i18n="name">Name</div>
+						<div data-i18n="guard"></div>
+					</div>
+					<div class="weaponhead flexcontainer">
+						<div class="selwidth" data-i18n="reach">Reach</div>
+						<div class="numwidth" data-i18n="P">P</div>
+						<div class="numwidth" data-i18n="L">L</div>
+						<div class="flex center" data-i18n="conditions">Condition(s)</div>
+					</div>
+					<fieldset class="repeating_weapons" name="repeating_weapons">
+						<div class="weaponwrap">
+							<div class="flexcontainer">
+								<div class="flex inline"><input class="weaponname" type="text" name="attr_weaponname"></div>
+								<input type="checkbox" name="attr_weaponguard">
+							</div>
+							<div class="flexcontainer">
+								<select class="weaponselect" name="attr_weaponreach">
+									<option value="touch" data-i18n="touch">Touch</option>
+									<option value="close" data-i18n="close">Close</option>
+									<option value="extend" data-i18n="extended">Extended</option>
+									<option value="short" data-i18n="shortrange">Short Range</option>
+									<option value="long" data-i18n="longrange">Long Range</option>
+									<option value="aoe" data-i18n="aoe">AoE</option>
+								</select>
+								<input type="number" name="attr_weaponpotency" value="0">
+								<input type="number" name="attr_weaponload" value="0">
+								<input type="text" class="flex minwidth" name="attr_weaponcond">
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<div class="col">
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="aptitudes">Aptitudes</span><div class="headpost"></div><div class="flexspacer"></div></div>
+				<div class="threecolrow">
+					<div class="col">
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="grace">Grace</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_grace" class="dot" value="1" />
+									<button type="action" name="act_grace-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_grace-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_grace-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_grace-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_grace-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="vigor">Vigor</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_vigor" class="dot" value="1" />
+									<button type="action" name="act_vigor-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_vigor-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_vigor-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_vigor-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_vigor-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="reason">Reason</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_reason" class="dot" value="1" />
+									<button type="action" name="act_reason-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_reason-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_reason-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_reason-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_reason-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="focus">Focus</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_focus" class="dot" value="1" />
+									<button type="action" name="act_focus-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_focus-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_focus-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_focus-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_focus-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="presence">Presence</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_presence" class="dot" value="1" />
+									<button type="action" name="act_presence-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_presence-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_presence-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_presence-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_presence-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="will">Will</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_will" class="dot" value="1" />
+									<button type="action" name="act_will-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_will-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_will-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_will-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_will-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="skills">Skills</span><div class="headpost"></div><div class="flexspacer"></div></div>
+				<div class="threecolrow">
+					<div class="col">
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="academics">Academics</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_academics" class="dot" value="0" />
+									<button type="action" name="act_academics-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_academics-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_academics-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_academics-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_academics-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="artisan">Artisan</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_artisan" class="dot" value="0" />
+									<button type="action" name="act_artisan-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_artisan-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_artisan-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_artisan-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_artisan-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="athletics">Athletics</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_athletics" class="dot" value="0" />
+									<button type="action" name="act_athletics-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_athletics-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_athletics-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_athletics-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_athletics-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="bureaucracy">Bureaucracy</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_bureaucracy" class="dot" value="0" />
+									<button type="action" name="act_bureaucracy-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_bureaucracy-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_bureaucracy-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_bureaucracy-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_bureaucracy-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="burglary">Burglary</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_burglary" class="dot" value="0" />
+									<button type="action" name="act_burglary-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_burglary-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_burglary-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_burglary-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_burglary-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="command">Command</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_command" class="dot" value="0" />
+									<button type="action" name="act_command-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_command-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_command-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_command-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_command-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="composure">Composure</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_composure" class="dot" value="0" />
+									<button type="action" name="act_composure-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_composure-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_composure-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_composure-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_composure-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="engineering">Engineering</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_engineering" class="dot" value="0" />
+									<button type="action" name="act_engineering-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_engineering-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_engineering-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_engineering-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_engineering-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="fencing">Fencing</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_fencing" class="dot" value="0" />
+									<button type="action" name="act_fencing-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_fencing-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_fencing-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_fencing-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_fencing-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="firearms">Firearms</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_firearms" class="dot" value="0" />
+									<button type="action" name="act_firearms-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_firearms-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_firearms-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_firearms-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_firearms-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="fisticuffs">Fisticuffs</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_fisticuffs" class="dot" value="0" />
+									<button type="action" name="act_fisticuffs-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_fisticuffs-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_fisticuffs-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_fisticuffs-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_fisticuffs-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="guile">Guile</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_guile" class="dot" value="0" />
+									<button type="action" name="act_guile-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_guile-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_guile-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_guile-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_guile-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="intuition">Intuition</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_intuition" class="dot" value="0" />
+									<button type="action" name="act_intuition-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_intuition-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_intuition-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_intuition-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_intuition-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="investigation">Investigation</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_investigation" class="dot" value="0" />
+									<button type="action" name="act_investigation-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_investigation-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_investigation-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_investigation-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_investigation-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="medicine">Medicine</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_medicine" class="dot" value="0" />
+									<button type="action" name="act_medicine-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_medicine-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_medicine-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_medicine-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_medicine-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="melee">Melee</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_melee" class="dot" value="0" />
+									<button type="action" name="act_melee-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_melee-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_melee-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_melee-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_melee-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="mysteries">Mysteries</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_mysteries" class="dot" value="0" />
+									<button type="action" name="act_mysteries-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_mysteries-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_mysteries-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_mysteries-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_mysteries-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="parley">Parley</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_parley" class="dot" value="0" />
+									<button type="action" name="act_parley-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_parley-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_parley-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_parley-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_parley-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>				
+					</div>
+					<div class="col">
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="refinement">Refinement</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_refinement" class="dot" value="0" />
+									<button type="action" name="act_refinement-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_refinement-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_refinement-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_refinement-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_refinement-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="riding">Riding</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_riding" class="dot" value="0" />
+									<button type="action" name="act_riding-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_riding-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_riding-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_riding-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_riding-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="science">Science</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_science" class="dot" value="0" />
+									<button type="action" name="act_science-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_science-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_science-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_science-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_science-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="stealth">Stealth</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_stealth" class="dot" value="0" />
+									<button type="action" name="act_stealth-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_stealth-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_stealth-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_stealth-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_stealth-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="streetwise">Streetwise</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_streetwise" class="dot" value="0" />
+									<button type="action" name="act_streetwise-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_streetwise-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_streetwise-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_streetwise-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_streetwise-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="survival">Survival</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_survival" class="dot" value="0" />
+									<button type="action" name="act_survival-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_survival-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_survival-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_survival-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_survival-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="tactics">Tactics</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_tactics" class="dot" value="0" />
+									<button type="action" name="act_tactics-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_tactics-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_tactics-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_tactics-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_tactics-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="temptation">Temptation</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_temptation" class="dot" value="0" />
+									<button type="action" name="act_temptation-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_temptation-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_temptation-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_temptation-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_temptation-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>
+						<div class="twocolrow">
+							<div class="col"><label data-i18n="vocation">Vocation</label></div>
+							<div class="dotcol">							
+								<div class="dots">
+									<input type="hidden" name="attr_vocation" class="dot" value="0" />
+									<button type="action" name="act_vocation-1" class="dot gt-0">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_vocation-2" class="dot gt-0 gt-1">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_vocation-3" class="dot gt-0 gt-1 gt-2">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_vocation-4" class="dot gt-0 gt-1 gt-2 gt-3">
+										<span class="checked"></span>
+									</button>
+									<button type="action" name="act_vocation-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+										<span class="checked"></span>
+									</button>
+								</div>				
+							</div>
+						</div>				
+					</div>			
+				</div>
+				<div class="twocolrow">
+					<div class="col">
+						<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="socialconflict">Social Conflict</span><div class="headpost"></div><div class="flexspacer"></div></div>
+						<div class="sheet-row center">
+							<div class="socialdesc" data-i18n="socialdefense">Social Defense</div>
+							<div class="weaponhead" data-i18n="willskill">Will+Skill</div>
+							<table class="deftable">
+								<tr>
+									<td><div class="shield"><span name="attr_compdef">1</span></div></td>
+									<td><div class="shield"><span name="attr_socdef">1</span></div></td>
+								</tr>
+								<tr>
+									<td><label data-i18n="composure">Composure</label></td>
+									<td><select name="attr_socdefskill">
+										<option value="academics" data-i18n="academics">Academics</option>
+										<option value="artisan" data-i18n="artisan">Artisan</option>
+										<option value="athletics" data-i18n="athletics">Athletics</option>
+										<option value="bureaucracy" data-i18n="bureaucracy">Bureaucracy</option>
+										<option value="burglary" data-i18n="burglary">Burglary</option>
+										<option value="command" data-i18n="command">Command</option>
+										<option value="composure" data-i18n="composure">Composure</option>
+										<option value="engineering" data-i18n="engineering">Engineering</option>
+										<option value="fencing" data-i18n="fencing">Fencing</option>
+										<option value="firearms" data-i18n="firearms">Firearms</option>
+										<option value="fisticuffs" data-i18n="fisticuffs">Fisticuffs</option>
+										<option value="focus" data-i18n="focus">Focus</option>
+										<option value="guile" data-i18n="guile">Guile</option>
+										<option value="intuition" data-i18n="intuition">Intuition</option>
+										<option value="investigation" data-i18n="investigation">Investigation</option>
+										<option value="medicine" data-i18n="medicine">Medicine</option>
+										<option value="melee" data-i18n="melee">Melee</option>
+										<option value="mysteries" data-i18n="mysteries">Mysteries</option>
+										<option value="parley" data-i18n="parley">Parley</option>
+										<option value="presence" data-i18n="presence">Presence</option>
+										<option value="refinement" data-i18n="refinement">Refinement</option>
+										<option value="reason" data-i18n="reason">Reason</option>
+										<option value="riding" data-i18n="riding">Riding</option>
+										<option value="science" data-i18n="science">Science</option>
+										<option value="stealth" data-i18n="stealth">Stealth</option>
+										<option value="streetwise" data-i18n="streetwise">Streetwise</option>
+										<option value="survival" data-i18n="survival">Survival</option>
+										<option value="tactics" data-i18n="tactics">Tactics</option>
+										<option value="vocation" data-i18n="vocation">Vocation</option>
+									</select>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="dispositions">Dispositions</span><div class="headpost"></div><div class="flexspacer"></div></div>
+						<div class="flexcontainer" style="clear: both;">
+							<div class="tableesque" data-i18n="hostile">Hostile</div>
+							<div class="tableesque" data-i18n="guarded">Guarded</div>
+							<div class="tableesque" data-i18n="indifferent">Indifferent</div>
+							<div class="tableesque" data-i18n="agreeable">Agreeable</div>
+							<div class="tableesque" data-i18n="favorable">Favorable</div>				
+						</div>
+						<div class="dispositiondots">													
+							<input type="hidden" class="radio" name="attr_disposition1" value="3" />
+							<div class="flexspacer"></div>
+							<button type="action" name="act_disposition1_1" class="radio radio-1">
+								<span class="unchecked" data-i18n="H">H</span>
+								<span class="checked" data-i18n="H">H</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_disposition1_2" class="radio radio-2">
+								<span class="unchecked" data-i18n="G">G</span>
+								<span class="checked" data-i18n="G">G</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_disposition1_3" class="radio radio-3">
+								<span class="unchecked" data-i18n="I">I</span>
+								<span class="checked" data-i18n="I">I</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_disposition1_4" class="radio radio-4">
+								<span class="unchecked" data-i18n="A">A</span>
+								<span class="checked" data-i18n="A">A</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_disposition1_5" class="radio radio-5">
+								<span class="unchecked" data-i18n="F">F</span>
+								<span class="checked" data-i18n="F">F</span>
+							</button>
+							<div class="flexspacer"></div>
+						</div>
+						<input type="text" name="attr_disposition2name">
+						<div class="dispositiondots">
+							<input type="hidden" class="radio" name="attr_disposition2" value="3" />
+							<div class="flexspacer"></div>
+							<button type="action" name="act_disposition2_1" class="radio radio-1">
+								<span class="unchecked" data-i18n="H">H</span>
+								<span class="checked" data-i18n="H">H</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_disposition2_2" class="radio radio-2">
+								<span class="unchecked" data-i18n="G">G</span>
+								<span class="checked" data-i18n="G">G</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_disposition2_3" class="radio radio-3">
+								<span class="unchecked" data-i18n="I">I</span>
+								<span class="checked" data-i18n="I">I</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_disposition2_4" class="radio radio-4">
+								<span class="unchecked" data-i18n="A">A</span>
+								<span class="checked" data-i18n="A">A</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_disposition2_5" class="radio radio-5">
+								<span class="unchecked" data-i18n="F">F</span>
+								<span class="checked" data-i18n="F">F</span>
+							</button>
+							<div class="flexspacer"></div>
+						</div>
+						<input type="text" name="attr_disposition2name">	
+						<label data-i18n="Esteem" class="center marginbot">Esteem</label>
+						<div class="weaponhead center" data-i18n="esteemdesc">Indifferent + (Tenor - Status) +/- 1/2 Relevant Reputation</div>
+						<div class="dispositiondots">
+							<input type="hidden" class="radio" name="attr_esteem" value="3" />
+							<div class="flexspacer"></div>
+							<button type="action" name="act_esteem_1" class="radio radio-1">
+								<span class="unchecked" data-i18n="H">H</span>
+								<span class="checked" data-i18n="H">H</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_esteem_2" class="radio radio-2">
+								<span class="unchecked" data-i18n="G">G</span>
+								<span class="checked" data-i18n="G">G</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_esteem_3" class="radio radio-3">
+								<span class="unchecked" data-i18n="I">I</span>
+								<span class="checked" data-i18n="I">I</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_esteem_4" class="radio radio-4">
+								<span class="unchecked" data-i18n="A">A</span>
+								<span class="checked" data-i18n="A">A</span>
+							</button>
+							<div class="flexspacer"></div>
+							<button type="action" name="act_esteem_5" class="radio radio-5">
+								<span class="unchecked" data-i18n="F">F</span>
+								<span class="checked" data-i18n="F">F</span>
+							</button>
+							<div class="flexspacer"></div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="sectionhead">
+							<div class="flexspacer"></div>
+							<div class="headpre"></div>
+							<span data-i18n="physicalconflict">Physical Conflict</span>
+							<div class="headpost"></div>
+							<div class="flexspacer"></div>
+						</div>
+						<div class="sheet-row center">
+							<div class="socialdesc" data-i18n="physicaldefense">Physical Defense</div>					
+							<div class="weaponhead" data-i18n="vigorskill">Vigor+Skill</div>
+							<table class="deftable">
+								<tr>
+									<td><div class="shield"><span name="attr_athdef">1</span></div></td>
+									<td><div class="shield"><span name="attr_phydef">1</span></div></td>
+									<td><div class="armor"><input type="number" name="attr_armor" value="0"></div></td>
+								</tr>
+								<tr>
+									<td><label data-i18n="athletics">Athletics</label></td>
+									<td><select name="attr_phydefskill">
+										<option value="academics" data-i18n="academics">Academics</option>
+										<option value="artisan" data-i18n="artisan">Artisan</option>
+										<option value="athletics" data-i18n="athletics">Athletics</option>
+										<option value="bureaucracy" data-i18n="bureaucracy">Bureaucracy</option>
+										<option value="burglary" data-i18n="burglary">Burglary</option>
+										<option value="command" data-i18n="command">Command</option>
+										<option value="composure" data-i18n="composure">Composure</option>
+										<option value="engineering" data-i18n="engineering">Engineering</option>
+										<option value="fencing" data-i18n="fencing">Fencing</option>
+										<option value="firearms" data-i18n="firearms">Firearms</option>
+										<option value="fisticuffs" data-i18n="fisticuffs">Fisticuffs</option>
+										<option value="focus" data-i18n="focus">Focus</option>
+										<option value="guile" data-i18n="guile">Guile</option>
+										<option value="intuition" data-i18n="intuition">Intuition</option>
+										<option value="investigation" data-i18n="investigation">Investigation</option>
+										<option value="medicine" data-i18n="medicine">Medicine</option>
+										<option value="melee" data-i18n="melee">Melee</option>
+										<option value="mysteries" data-i18n="mysteries">Mysteries</option>
+										<option value="parley" data-i18n="parley">Parley</option>
+										<option value="presence" data-i18n="presence">Presence</option>
+										<option value="refinement" data-i18n="refinement">Refinement</option>
+										<option value="reason" data-i18n="reason">Reason</option>
+										<option value="riding" data-i18n="riding">Riding</option>
+										<option value="science" data-i18n="science">Science</option>
+										<option value="stealth" data-i18n="stealth">Stealth</option>
+										<option value="streetwise" data-i18n="streetwise">Streetwise</option>
+										<option value="survival" data-i18n="survival">Survival</option>
+										<option value="tactics" data-i18n="tactics">Tactics</option>
+										<option value="vocation" data-i18n="vocation">Vocation</option>
+									</select>
+									</td>
+									<td><label data-i18n="armor">Armor</label></td>
+								</tr>
+							</table>					
+						</div>
+						<div class="sectionhead">
+							<div class="flexspacer"></div>
+							<div class="headpre"></div>
+							<span data-i18n="guard">Guard</span>
+							<div class="headpost"></div>
+							<div class="flexspacer"></div>
+						</div>
+						<div class="flexcontainer">
+							<div class="flexspacer"></div>
+							<span class="weaponhead" data-i18n="guarddesc">1/2 Focus, +1 for Weapon</span>
+							<div class="flexspacer"></div>
+						</div>
+						<div class="sheet-row">
+							<div class="dispositiondots marginbot">
+								<div class="flexspacer"></div>
+								<input type="hidden" name="attr_guard" class="dot" value="0" />
+								<input type="hidden" name="attr_guardwep" value="0">
+								<div class="none"><label class="center" data-i18n="guarddown">Guard Down</label></div>							
+								<input type="hidden" class="guardval" name="attr_guard1" value="1" />
+								<button type="action" name="act_guard-1" class="guarddot gt-0guard">
+									<span class="checked"></span>
+								</button>
+								<input type="hidden" class="guardval" name="attr_guard2" value="1" />
+								<button type="action" name="act_guard-2" class="guarddot gt-0guard gt-1guard">
+									<span class="checked"></span>
+								</button>
+								<input type="hidden" class="guardval" name="attr_guard3" value="1" />
+								<button type="action" name="act_guard-3" class="guarddot gt-0guard gt-1guard gt-2guard">
+									<span class="checked"></span>
+								</button>							
+								<input type="hidden" name="attr_guardwep" value="0" />
+								<input type="hidden" class="guardval" name="attr_guard4" value="1" />
+								<button type="action" name="act_guard-4" class="guardwepdot">
+									<span class="checked"></span>
+								</button>
+								<div class="flexspacer"></div>
+							</div>
+						</div>
+						<div class="sheet-row">
+							<label data-i18n="wounds">Wounds</label>
+							<div class="dispositiondots marginbot">
+								<div class="flexspacer"></div>
+								<input type="hidden" name="attr_wound" class="dot" value="0" />
+								<button type="action" name="act_wound-1" class="dot gt-0">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_wound-2" class="dot gt-0 gt-1">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_wound-3" class="dot gt-0 gt-1 gt-2">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_wound-4" class="dot gt-0 gt-1 gt-2 gt-3">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_wound-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+									<span class="checked"></span>
+								</button>
+								<div class="flexspacer"></div>
+							</div>	
+						</div>
+						<div class="sheet-row">
+							<label data-i18n="woundpenalties">Wound Penalties</label>
+							<input type="number" name="attr_woundpenalty" class="blackbox marginbot" style="width: 3.5em !important" value="0">
+						</div>
+						<div class="sheet-row">
+							<label data-i18n="xp">Experience Points</label>
+							<input type="number" name="attr_xp" class="blackbox marginbot" style="width: 3.5em !important" value="0">
+						</div>
+						<div class="sectionhead"><div class="flexspacer"></div><span data-i18n="persistentconditions">Persistent Conditions</span><div class="flexspacer"></div></div>
+						<fieldset class="repeating_conditions" name="repeating_conditions">
+							<input type="text" name="attr_condition">
+						</fieldset>				
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="splitrow">
-		<div class="col">
-			<div class="twocolrow">
-				<div class="col noright">
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="status">Status</span><div class="headpost"></div><div class="flexspacer"></div></div>			
-					<div class="sheet-row">
-						<label data-i18n="class">Class</label>
-						<div class="floatright">
-							<input type="number" name= "attr_classrank" value="0">						
-							<div class="dots">
-								<input type="hidden" name="attr_classtemp" class="dot" value="0" />
-								<button type="action" name="act_classtemp-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_classtemp-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_classtemp-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_classtemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_classtemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="sheet-row">
-						<label data-i18n="means">Means</label>
-						<div class="floatright">
-							<input type="number" name= "attr_meansrank" value="0">
-							<div class="dots">
-								<input type="hidden" name="attr_meanstemp" class="dot" value="0" />
-								<button type="action" name="act_meanstemp-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_meanstemp-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_meanstemp-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_meanstemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_meanstemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="potential">Potential</span><div class="headpost"></div><div class="flexspacer"></div></div>
-					<div class="sheet-row">
-						<label data-i18n="purpose">Purpose</label>
-						<div class="floatright">
-							<input type="number" name= "attr_purposerank" value="0">
-							<div class="dots">
-								<input type="hidden" name="attr_purposetemp" class="dot" value="0" />
-								<button type="action" name="act_purposetemp-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_purposetemp-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_purposetemp-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_purposetemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_purposetemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="sheet-row">
-						<label data-i18n="ether">Ether</label>
-						<div class="floatright">
-							<input type="number" name= "attr_etherrank" value="0">
-							<div class="dots">
-								<input type="hidden" name="attr_ethertemp" class="dot" value="0" />
-								<button type="action" name="act_ethertemp-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_ethertemp-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_ethertemp-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_ethertemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_ethertemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="sheet-row">
-						<label data-i18n="corruption">Corruption</label>
-						<div class="floatright">							
-							<div class="dots">
-								<input type="hidden" name="attr_corruption" class="dot" value="0" />
-								<button type="action" name="act_corruption-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_corruption-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_corruption-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_corruption-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_corruption-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-				</div>
+	<div class="npcsheet">
+		<div class="headerrow">
+			<div class="col">
+				<!-- headimg -->
+				<img class="logo" src="https://raw.githubusercontent.com/EtoileLion/Project-Ansel/master/images/CD.png">
+				<select name="attr_sheettype">
+					<option value="pc" selected>PC</option>
+					<option value="npc">NPC</option>				
+				</select>
 			</div>
-			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="memberships">Memberships</span><div class="headpost"></div><div class="flexspacer"></div></div>			
-				<fieldset class="repeating_memberships" name="repeating_memberships">
-					<div class="flexcontainer">
-						<input type="text" name="attr_membername" class="flex">
-						<input type="number" name= "attr_memberank" value="1" class="rightspace">
+			<div class="col">
+				<label class="sectionhead" data-i18n="name">Name</label>
+				<input type="text" name="attr_character_name">
+			</div>
+			<div class="col">
+				<div>
+					<label class="sectionhead inline" data-i18n="threat">Threat</label>				
+					<input type="number" name="attr_threat" class="">
+				</div>
+				<label data-i18n="wounds" class="sectionhead inline">Wounds</label>
+				<div class="dispositiondots marginbot">
+					<div class="flexspacer"></div>
+					<input type="hidden" name="attr_wound" class="dot" value="0" />
+					<button type="action" name="act_wound-1" class="dot gt-0">
+						<span class="checked"></span>
+					</button>
+					<button type="action" name="act_wound-2" class="dot gt-0 gt-1">
+						<span class="checked"></span>
+					</button>
+					<button type="action" name="act_wound-3" class="dot gt-0 gt-1 gt-2">
+						<span class="checked"></span>
+					</button>
+					<button type="action" name="act_wound-4" class="dot gt-0 gt-1 gt-2 gt-3">
+						<span class="checked"></span>
+					</button>
+					<button type="action" name="act_wound-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+						<span class="checked"></span>
+					</button>
+					<div class="flexspacer"></div>
+				</div>					
+			</div>
+		</div>
+		<div class="twocolrow">
+			<div class="col">
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="aptitudes">Aptitudes</span><div class="headpost"></div><div class="flexspacer"></div></div>
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="grace">Grace</label></div>
+					<div class="dotcol">							
 						<div class="dots">
-							<input type="hidden" name="attr_membertemp" class="dot" value="0" />
-							<button type="action" name="act_membertemp-1" class="dot gt-0">
+							<input type="hidden" name="attr_grace" class="dot" value="1" />
+							<button type="action" name="act_grace-1" class="dot gt-0">
 								<span class="checked"></span>
 							</button>
-							<button type="action" name="act_membertemp-2" class="dot gt-0 gt-1">
+							<button type="action" name="act_grace-2" class="dot gt-0 gt-1">
 								<span class="checked"></span>
 							</button>
-							<button type="action" name="act_membertemp-3" class="dot gt-0 gt-1 gt-2">
+							<button type="action" name="act_grace-3" class="dot gt-0 gt-1 gt-2">
 								<span class="checked"></span>
 							</button>
-							<button type="action" name="act_membertemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+							<button type="action" name="act_grace-4" class="dot gt-0 gt-1 gt-2 gt-3">
 								<span class="checked"></span>
 							</button>
-							<button type="action" name="act_membertemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+							<button type="action" name="act_grace-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
 								<span class="checked"></span>
 							</button>
-						</div>
+						</div>				
 					</div>
-				</fieldset>
-			</div>
-			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div> <span data-i18n="reputations">Reputations</span><div class="headpost"></div><div class="flexspacer"></div></div>			
-				<fieldset class="repeating_reputations" name="repeating_reputations">
-					<div class="flexcontainer">
-						<input type="text" name="attr_reputationname" class="flex">
-						<input type="number" name= "attr_reputationank" value="1" class="rightspace">
-						<div class="dots">
-							<input type="hidden" name="attr_reputationtemp" class="dot" value="0" />
-							<button type="action" name="act_reputationtemp-1" class="dot gt-0">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_reputationtemp-2" class="dot gt-0 gt-1">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_reputationtemp-3" class="dot gt-0 gt-1 gt-2">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_reputationtemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_reputationtemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-								<span class="checked"></span>
-							</button>
-						</div>
-					</div>
-				</fieldset>
-			</div>
-			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="affinities">Affinities</span><div class="headpost"></div><div class="flexspacer"></div></div>			
-				<fieldset class="repeating_affinities" name="repeating_affinities">
-					<div class="flexcontainer">
-						<input type="text" name="attr_affinityname" class="flex">
-						<input type="number" name= "attr_affinityank" value="1" class="rightspace">
-						<div class="dots">
-							<input type="hidden" name="attr_affinitytemp" class="dot" value="0" />
-							<button type="action" name="act_affinitytemp-1" class="dot gt-0">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_affinitytemp-2" class="dot gt-0 gt-1">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_affinitytemp-3" class="dot gt-0 gt-1 gt-2">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_affinitytemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_affinitytemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-								<span class="checked"></span>
-							</button>
-						</div>
-					</div>
-				</fieldset>
-			</div>
-			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="blessings">Blessings, Curses <br>&amp; Masteries</span><div class="headpost"></div><div class="flexspacer"></div></div>
-				<fieldset class="repeating_blessings" name="repeating_blessings">
-					<div class="flexcontainer">
-						<input type="text" name="attr_blessname" class="flex">
-					</div>
-				</fieldset>
-			</div>
-			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="assets">Assets, Liabilities</span><div class="headpost"></div><div class="flexspacer"></div></div>
-				<div class="sectionhead"><div class="flexspacer"></div><span data-i18n="assets2">&amp; Transcendent Powers</span><div class="flexspacer"></div></div>		
-				<fieldset class="repeating_assets" name="repeating_assets">
-					<div class="flexcontainer">
-						<input type="text" name="attr_membername" class="flex">		
-					</div>
-				</fieldset>
-			</div>
-			<div class="section">
-				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="weapons">Weapons &amp; Evidence</span><div class="headpost"></div><div class="flexspacer"></div></div>			
-				<div class="weaponhead flexcontainer">
-					<div class="flex center" data-i18n="name">Name</div>
-					<div data-i18n="guard"></div>
 				</div>
-				<div class="weaponhead flexcontainer">
-					<div class="selwidth" data-i18n="reach">Reach</div>
-					<div class="numwidth" data-i18n="P">P</div>
-					<div class="numwidth" data-i18n="L">L</div>
-					<div class="flex center" data-i18n="conditions">Condition(s)</div>
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="vigor">Vigor</label></div>
+					<div class="dotcol">							
+						<div class="dots">
+							<input type="hidden" name="attr_vigor" class="dot" value="1" />
+							<button type="action" name="act_vigor-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_vigor-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_vigor-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_vigor-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_vigor-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
 				</div>
-				<fieldset class="repeating_weapons" name="repeating_weapons">
-					<div class="weaponwrap">
-						<div class="flexcontainer">
-							<div class="flex inline"><input class="weaponname" type="text" name="attr_weaponname"></div>
-							<input type="checkbox" name="attr_weaponguard">
-						</div>
-						<div class="flexcontainer">
-							<select class="weaponselect" name="attr_weaponreach">
-								<option value="touch" data-i18n="touch">Touch</option>
-								<option value="close" data-i18n="close">Close</option>
-								<option value="extend" data-i18n="extended">Extended</option>
-								<option value="short" data-i18n="shortrange">Short Range</option>
-								<option value="long" data-i18n="longrange">Long Range</option>
-								<option value="aoe" data-i18n="aoe">AoE</option>
-							</select>
-							<input type="number" name="attr_weaponpotency" value="0">
-							<input type="number" name="attr_weaponload" value="0">
-							<input type="text" class="flex minwidth" name="attr_weaponcond">
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="reason">Reason</label></div>
+					<div class="dotcol">							
+						<div class="dots">
+							<input type="hidden" name="attr_reason" class="dot" value="1" />
+							<button type="action" name="act_reason-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_reason-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_reason-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_reason-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_reason-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
+				</div>
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="focus">Focus</label></div>
+					<div class="dotcol">							
+						<div class="dots">
+							<input type="hidden" name="attr_focus" class="dot" value="1" />
+							<button type="action" name="act_focus-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_focus-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_focus-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_focus-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_focus-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
+				</div>
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="presence">Presence</label></div>
+					<div class="dotcol">							
+						<div class="dots">
+							<input type="hidden" name="attr_presence" class="dot" value="1" />
+							<button type="action" name="act_presence-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_presence-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_presence-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_presence-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_presence-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
+				</div>
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="will">Will</label></div>
+					<div class="dotcol">							
+						<div class="dots">
+							<input type="hidden" name="attr_will" class="dot" value="1" />
+							<button type="action" name="act_will-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_will-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_will-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_will-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_will-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
+				</div>
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="potential">Potential</span><div class="headpost"></div><div class="flexspacer"></div></div>						
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="purpose">Purpose</label></div>
+					<div class="dotcol">
+						<div class="dots">
+							<input type="hidden" name="attr_purposetemp" class="dot" value="0" />
+							<button type="action" name="act_purposetemp-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_purposetemp-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_purposetemp-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_purposetemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_purposetemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
+				</div>
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="ether">Ether</label></div>
+					<div class="dotcol">
+						<div class="dots">
+							<input type="hidden" name="attr_ethertemp" class="dot" value="0" />
+							<button type="action" name="act_ethertemp-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_ethertemp-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_ethertemp-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_ethertemp-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_ethertemp-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
+				</div>
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="corruption">Corruption</label></div>
+					<div class="dotcol">							
+						<div class="dots">
+							<input type="hidden" name="attr_corruption" class="dot" value="0" />
+							<button type="action" name="act_corruption-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_corruption-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_corruption-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_corruption-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_corruption-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="skillstraits">Skills &amp; Traits</span><div class="headpost"></div><div class="flexspacer"></div></div>
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="npcphysical">Physical</label></div>
+					<div class="dotcol">							
+						<div class="dots">
+							<input type="hidden" name="attr_npcphysical" class="dot" value="0" />
+							<button type="action" name="act_npcphysical-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcphysical-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcphysical-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcphysical-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcphysical-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
+				</div>
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="npcmental">Mental</label></div>
+					<div class="dotcol">							
+						<div class="dots">
+							<input type="hidden" name="attr_npcmental" class="dot" value="0" />
+							<button type="action" name="act_npcmental-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcmental-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcmental-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcmental-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcmental-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
+				</div>
+				<div class="twocolrow">
+					<div class="col"><label data-i18n="npcsocial">Social</label></div>
+					<div class="dotcol">							
+						<div class="dots">
+							<input type="hidden" name="attr_npcsocial" class="dot" value="0" />
+							<button type="action" name="act_npcsocial-1" class="dot gt-0">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcsocial-2" class="dot gt-0 gt-1">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcsocial-3" class="dot gt-0 gt-1 gt-2">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcsocial-4" class="dot gt-0 gt-1 gt-2 gt-3">
+								<span class="checked"></span>
+							</button>
+							<button type="action" name="act_npcsocial-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+								<span class="checked"></span>
+							</button>
+						</div>				
+					</div>
+				</div>
+				<fieldset class="repeating_npcskills" name="repeating_npcskills">
+					<div class="twocolrow">
+						<div class="col"><input type="text" name="attr_npcskillname"></div>
+						<div class="dotcol">							
+							<div class="dots">
+								<input type="hidden" name="attr_npcskill" class="dot" value="0" />
+								<button type="action" name="act_npcskill-1" class="dot gt-0">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_npcskill-2" class="dot gt-0 gt-1">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_npcskill-3" class="dot gt-0 gt-1 gt-2">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_npcskill-4" class="dot gt-0 gt-1 gt-2 gt-3">
+									<span class="checked"></span>
+								</button>
+								<button type="action" name="act_npcskill-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+									<span class="checked"></span>
+								</button>
+							</div>				
 						</div>
 					</div>
 				</fieldset>
 			</div>
 		</div>
-		<div class="col">
-			<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="aptitudes">Aptitudes</span><div class="headpost"></div><div class="flexspacer"></div></div>
-			<div class="threecolrow">
-				<div class="col">
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="grace">Grace</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_grace" class="dot" value="1" />
-								<button type="action" name="act_grace-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_grace-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_grace-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_grace-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_grace-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="vigor">Vigor</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_vigor" class="dot" value="1" />
-								<button type="action" name="act_vigor-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_vigor-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_vigor-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_vigor-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_vigor-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
+		<div class="threecolrow">		
+			<div class="col">
+				<div class="sectionhead">
+					<div class="flexspacer"></div>
+					<div class="headpre"></div>
+					<span data-i18n="guard">Guard</span>
+					<div class="headpost"></div>
+					<div class="flexspacer"></div>
 				</div>
-				<div class="col">
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="reason">Reason</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_reason" class="dot" value="1" />
-								<button type="action" name="act_reason-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_reason-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_reason-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_reason-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_reason-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="focus">Focus</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_focus" class="dot" value="1" />
-								<button type="action" name="act_focus-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_focus-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_focus-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_focus-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_focus-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="presence">Presence</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_presence" class="dot" value="1" />
-								<button type="action" name="act_presence-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_presence-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_presence-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_presence-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_presence-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="will">Will</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_will" class="dot" value="1" />
-								<button type="action" name="act_will-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_will-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_will-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_will-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_will-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="skills">Skills</span><div class="headpost"></div><div class="flexspacer"></div></div>
-			<div class="threecolrow">
-				<div class="col">
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="academics">Academics</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_academics" class="dot" value="0" />
-								<button type="action" name="act_academics-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_academics-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_academics-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_academics-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_academics-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="artisan">Artisan</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_artisan" class="dot" value="0" />
-								<button type="action" name="act_artisan-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_artisan-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_artisan-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_artisan-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_artisan-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="athletics">Athletics</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_athletics" class="dot" value="0" />
-								<button type="action" name="act_athletics-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_athletics-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_athletics-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_athletics-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_athletics-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="bureaucracy">Bureaucracy</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_bureaucracy" class="dot" value="0" />
-								<button type="action" name="act_bureaucracy-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_bureaucracy-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_bureaucracy-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_bureaucracy-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_bureaucracy-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="burglary">Burglary</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_burglary" class="dot" value="0" />
-								<button type="action" name="act_burglary-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_burglary-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_burglary-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_burglary-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_burglary-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="command">Command</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_command" class="dot" value="0" />
-								<button type="action" name="act_command-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_command-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_command-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_command-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_command-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="composure">Composure</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_composure" class="dot" value="0" />
-								<button type="action" name="act_composure-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_composure-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_composure-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_composure-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_composure-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="engineering">Engineering</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_engineering" class="dot" value="0" />
-								<button type="action" name="act_engineering-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_engineering-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_engineering-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_engineering-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_engineering-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="fencing">Fencing</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_fencing" class="dot" value="0" />
-								<button type="action" name="act_fencing-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_fencing-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_fencing-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_fencing-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_fencing-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="firearms">Firearms</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_firearms" class="dot" value="0" />
-								<button type="action" name="act_firearms-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_firearms-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_firearms-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_firearms-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_firearms-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="fisticuffs">Fisticuffs</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_fisticuffs" class="dot" value="0" />
-								<button type="action" name="act_fisticuffs-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_fisticuffs-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_fisticuffs-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_fisticuffs-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_fisticuffs-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="guile">Guile</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_guile" class="dot" value="0" />
-								<button type="action" name="act_guile-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_guile-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_guile-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_guile-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_guile-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="intuition">Intuition</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_intuition" class="dot" value="0" />
-								<button type="action" name="act_intuition-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_intuition-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_intuition-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_intuition-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_intuition-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="investigation">Investigation</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_investigation" class="dot" value="0" />
-								<button type="action" name="act_investigation-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_investigation-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_investigation-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_investigation-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_investigation-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="medicine">Medicine</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_medicine" class="dot" value="0" />
-								<button type="action" name="act_medicine-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_medicine-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_medicine-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_medicine-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_medicine-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="melee">Melee</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_melee" class="dot" value="0" />
-								<button type="action" name="act_melee-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_melee-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_melee-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_melee-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_melee-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="mysteries">Mysteries</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_mysteries" class="dot" value="0" />
-								<button type="action" name="act_mysteries-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_mysteries-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_mysteries-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_mysteries-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_mysteries-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="parley">Parley</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_parley" class="dot" value="0" />
-								<button type="action" name="act_parley-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_parley-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_parley-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_parley-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_parley-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>				
-				</div>
-				<div class="col">
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="refinement">Refinement</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_refinement" class="dot" value="0" />
-								<button type="action" name="act_refinement-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_refinement-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_refinement-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_refinement-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_refinement-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="riding">Riding</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_riding" class="dot" value="0" />
-								<button type="action" name="act_riding-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_riding-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_riding-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_riding-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_riding-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="science">Science</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_science" class="dot" value="0" />
-								<button type="action" name="act_science-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_science-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_science-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_science-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_science-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="stealth">Stealth</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_stealth" class="dot" value="0" />
-								<button type="action" name="act_stealth-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_stealth-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_stealth-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_stealth-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_stealth-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="streetwise">Streetwise</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_streetwise" class="dot" value="0" />
-								<button type="action" name="act_streetwise-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_streetwise-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_streetwise-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_streetwise-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_streetwise-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="survival">Survival</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_survival" class="dot" value="0" />
-								<button type="action" name="act_survival-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_survival-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_survival-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_survival-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_survival-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="tactics">Tactics</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_tactics" class="dot" value="0" />
-								<button type="action" name="act_tactics-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_tactics-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_tactics-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_tactics-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_tactics-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="temptation">Temptation</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_temptation" class="dot" value="0" />
-								<button type="action" name="act_temptation-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_temptation-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_temptation-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_temptation-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_temptation-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>
-					<div class="twocolrow">
-						<div class="col"><label data-i18n="vocation">Vocation</label></div>
-						<div class="dotcol">							
-							<div class="dots">
-								<input type="hidden" name="attr_vocation" class="dot" value="0" />
-								<button type="action" name="act_vocation-1" class="dot gt-0">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_vocation-2" class="dot gt-0 gt-1">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_vocation-3" class="dot gt-0 gt-1 gt-2">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_vocation-4" class="dot gt-0 gt-1 gt-2 gt-3">
-									<span class="checked"></span>
-								</button>
-								<button type="action" name="act_vocation-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-									<span class="checked"></span>
-								</button>
-							</div>				
-						</div>
-					</div>				
+				<div class="flexcontainer">
+					<div class="flexspacer"></div>
+					<span class="weaponhead" data-i18n="guarddesc">1/2 Focus, +1 for Weapon</span>
+					<div class="flexspacer"></div>
 				</div>			
-			</div>
-			<div class="twocolrow">
-				<div class="col">
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="socialconflict">Social Conflict</span><div class="headpost"></div><div class="flexspacer"></div></div>
-					<div class="sheet-row center">
-						<div class="socialdesc" data-i18n="socialdefense">Social Defense</div>
-						<div class="weaponhead" data-i18n="willskill">Will+Skill</div>
-						<table class="deftable">
-							<tr>
-								<td><div class="shield"><span name="attr_compdef">1</span></div></td>
-								<td><div class="shield"><span name="attr_socdef">1</span></div></td>
-							</tr>
-							<tr>
-								<td><label data-i18n="composure">Composure</label></td>
-								<td><select name="attr_socdefskill">
-									<option value="academics" data-i18n="academics">Academics</option>
-									<option value="artisan" data-i18n="artisan">Artisan</option>
-									<option value="athletics" data-i18n="athletics">Athletics</option>
-									<option value="bureaucracy" data-i18n="bureaucracy">Bureaucracy</option>
-									<option value="burglary" data-i18n="burglary">Burglary</option>
-									<option value="command" data-i18n="command">Command</option>
-									<option value="composure" data-i18n="composure">Composure</option>
-									<option value="engineering" data-i18n="engineering">Engineering</option>
-									<option value="fencing" data-i18n="fencing">Fencing</option>
-									<option value="firearms" data-i18n="firearms">Firearms</option>
-									<option value="fisticuffs" data-i18n="fisticuffs">Fisticuffs</option>
-									<option value="focus" data-i18n="focus">Focus</option>
-									<option value="guile" data-i18n="guile">Guile</option>
-									<option value="intuition" data-i18n="intuition">Intuition</option>
-									<option value="investigation" data-i18n="investigation">Investigation</option>
-									<option value="medicine" data-i18n="medicine">Medicine</option>
-									<option value="melee" data-i18n="melee">Melee</option>
-									<option value="mysteries" data-i18n="mysteries">Mysteries</option>
-									<option value="parley" data-i18n="parley">Parley</option>
-									<option value="presence" data-i18n="presence">Presence</option>
-									<option value="refinement" data-i18n="refinement">Refinement</option>
-									<option value="reason" data-i18n="reason">Reason</option>
-									<option value="riding" data-i18n="riding">Riding</option>
-									<option value="science" data-i18n="science">Science</option>
-									<option value="stealth" data-i18n="stealth">Stealth</option>
-									<option value="streetwise" data-i18n="streetwise">Streetwise</option>
-									<option value="survival" data-i18n="survival">Survival</option>
-									<option value="tactics" data-i18n="tactics">Tactics</option>
-									<option value="vocation" data-i18n="vocation">Vocation</option>
-								</select>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="dispositions">Dispositions</span><div class="headpost"></div><div class="flexspacer"></div></div>
-					<div class="flexcontainer" style="clear: both;">
-						<div class="tableesque" data-i18n="hostile">Hostile</div>
-						<div class="tableesque" data-i18n="guarded">Guarded</div>
-						<div class="tableesque" data-i18n="indifferent">Indifferent</div>
-						<div class="tableesque" data-i18n="agreeable">Agreeable</div>
-						<div class="tableesque" data-i18n="favorable">Favorable</div>				
-					</div>
-					<div class="dispositiondots">													
-						<input type="hidden" class="radio" name="attr_disposition1" value="3" />
+				<div>
+					<div class="dispositiondots marginbot">
 						<div class="flexspacer"></div>
-						<button type="action" name="act_disposition1_1" class="radio radio-1">
-							<span class="unchecked" data-i18n="H">H</span>
-							<span class="checked" data-i18n="H">H</span>
+						<input type="hidden" name="attr_guard" class="dot" value="0" />
+						<input type="hidden" name="attr_guardwep" value="0">
+						<div class="none"><label class="center" data-i18n="guarddown">Guard Down</label></div>							
+						<input type="hidden" class="guardval" name="attr_guard1" value="1" />
+						<button type="action" name="act_guard-1" class="guarddot gt-0guard">
+							<span class="checked"></span>
 						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_disposition1_2" class="radio radio-2">
-							<span class="unchecked" data-i18n="G">G</span>
-							<span class="checked" data-i18n="G">G</span>
+						<input type="hidden" class="guardval" name="attr_guard2" value="1" />
+						<button type="action" name="act_guard-2" class="guarddot gt-0guard gt-1guard">
+							<span class="checked"></span>
 						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_disposition1_3" class="radio radio-3">
-							<span class="unchecked" data-i18n="I">I</span>
-							<span class="checked" data-i18n="I">I</span>
-						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_disposition1_4" class="radio radio-4">
-							<span class="unchecked" data-i18n="A">A</span>
-							<span class="checked" data-i18n="A">A</span>
-						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_disposition1_5" class="radio radio-5">
-							<span class="unchecked" data-i18n="F">F</span>
-							<span class="checked" data-i18n="F">F</span>
-						</button>
-						<div class="flexspacer"></div>
-					</div>
-					<input type="text" name="attr_disposition2name">
-					<div class="dispositiondots">
-						<input type="hidden" class="radio" name="attr_disposition2" value="3" />
-						<div class="flexspacer"></div>
-						<button type="action" name="act_disposition2_1" class="radio radio-1">
-							<span class="unchecked" data-i18n="H">H</span>
-							<span class="checked" data-i18n="H">H</span>
-						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_disposition2_2" class="radio radio-2">
-							<span class="unchecked" data-i18n="G">G</span>
-							<span class="checked" data-i18n="G">G</span>
-						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_disposition2_3" class="radio radio-3">
-							<span class="unchecked" data-i18n="I">I</span>
-							<span class="checked" data-i18n="I">I</span>
-						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_disposition2_4" class="radio radio-4">
-							<span class="unchecked" data-i18n="A">A</span>
-							<span class="checked" data-i18n="A">A</span>
-						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_disposition2_5" class="radio radio-5">
-							<span class="unchecked" data-i18n="F">F</span>
-							<span class="checked" data-i18n="F">F</span>
-						</button>
-						<div class="flexspacer"></div>
-					</div>
-					<input type="text" name="attr_disposition2name">	
-					<label data-i18n="Esteem" class="center marginbot">Esteem</label>
-					<div class="weaponhead center" data-i18n="esteemdesc">Indifferent + (Tenor - Status) +/- 1/2 Relevant Reputation</div>
-					<div class="dispositiondots">
-						<input type="hidden" class="radio" name="attr_esteem" value="3" />
-						<div class="flexspacer"></div>
-						<button type="action" name="act_esteem_1" class="radio radio-1">
-							<span class="unchecked" data-i18n="H">H</span>
-							<span class="checked" data-i18n="H">H</span>
-						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_esteem_2" class="radio radio-2">
-							<span class="unchecked" data-i18n="G">G</span>
-							<span class="checked" data-i18n="G">G</span>
-						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_esteem_3" class="radio radio-3">
-							<span class="unchecked" data-i18n="I">I</span>
-							<span class="checked" data-i18n="I">I</span>
-						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_esteem_4" class="radio radio-4">
-							<span class="unchecked" data-i18n="A">A</span>
-							<span class="checked" data-i18n="A">A</span>
-						</button>
-						<div class="flexspacer"></div>
-						<button type="action" name="act_esteem_5" class="radio radio-5">
-							<span class="unchecked" data-i18n="F">F</span>
-							<span class="checked" data-i18n="F">F</span>
+						<input type="hidden" class="guardval" name="attr_guard3" value="1" />
+						<button type="action" name="act_guard-3" class="guarddot gt-0guard gt-1guard gt-2guard">
+							<span class="checked"></span>
+						</button>							
+						<input type="hidden" name="attr_guardwep" value="0" />
+						<input type="hidden" class="guardval" name="attr_guard4" value="1" />
+						<button type="action" name="act_guard-4" class="guardwepdot">
+							<span class="checked"></span>
 						</button>
 						<div class="flexspacer"></div>
 					</div>
 				</div>
-				<div class="col">
-					<div class="sectionhead">
-						<div class="flexspacer"></div>
-						<div class="headpre"></div>
-						<span data-i18n="physicalconflict">Physical Conflict</span>
-						<div class="headpost"></div>
-						<div class="flexspacer"></div>
-					</div>
-					<div class="sheet-row center">
-						<div class="socialdesc" data-i18n="physicaldefense">Physical Defense</div>					
-						<div class="weaponhead" data-i18n="vigorskill">Vigor+Skill</div>
-						<table class="deftable">
-							<tr>
-								<td><div class="shield"><span name="attr_athdef">1</span></div></td>
-								<td><div class="shield"><span name="attr_phydef">1</span></div></td>
-								<td><div class="armor"><input type="number" name="attr_armor" value="0"></div></td>
-							</tr>
-							<tr>
-								<td><label data-i18n="athletics">Athletics</label></td>
-								<td><select name="attr_phydefskill">
-									<option value="academics" data-i18n="academics">Academics</option>
-									<option value="artisan" data-i18n="artisan">Artisan</option>
-									<option value="athletics" data-i18n="athletics">Athletics</option>
-									<option value="bureaucracy" data-i18n="bureaucracy">Bureaucracy</option>
-									<option value="burglary" data-i18n="burglary">Burglary</option>
-									<option value="command" data-i18n="command">Command</option>
-									<option value="composure" data-i18n="composure">Composure</option>
-									<option value="engineering" data-i18n="engineering">Engineering</option>
-									<option value="fencing" data-i18n="fencing">Fencing</option>
-									<option value="firearms" data-i18n="firearms">Firearms</option>
-									<option value="fisticuffs" data-i18n="fisticuffs">Fisticuffs</option>
-									<option value="focus" data-i18n="focus">Focus</option>
-									<option value="guile" data-i18n="guile">Guile</option>
-									<option value="intuition" data-i18n="intuition">Intuition</option>
-									<option value="investigation" data-i18n="investigation">Investigation</option>
-									<option value="medicine" data-i18n="medicine">Medicine</option>
-									<option value="melee" data-i18n="melee">Melee</option>
-									<option value="mysteries" data-i18n="mysteries">Mysteries</option>
-									<option value="parley" data-i18n="parley">Parley</option>
-									<option value="presence" data-i18n="presence">Presence</option>
-									<option value="refinement" data-i18n="refinement">Refinement</option>
-									<option value="reason" data-i18n="reason">Reason</option>
-									<option value="riding" data-i18n="riding">Riding</option>
-									<option value="science" data-i18n="science">Science</option>
-									<option value="stealth" data-i18n="stealth">Stealth</option>
-									<option value="streetwise" data-i18n="streetwise">Streetwise</option>
-									<option value="survival" data-i18n="survival">Survival</option>
-									<option value="tactics" data-i18n="tactics">Tactics</option>
-									<option value="vocation" data-i18n="vocation">Vocation</option>
-								</select>
-								</td>
-								<td><label data-i18n="armor">Armor</label></td>
-							</tr>
-						</table>					
-					</div>
-					<div class="sectionhead">
-						<div class="flexspacer"></div>
-						<div class="headpre"></div>
-						<span data-i18n="guard">Guard</span>
-						<div class="headpost"></div>
-						<div class="flexspacer"></div>
-					</div>
-					<div class="flexcontainer">
-						<div class="flexspacer"></div>
-						<span class="weaponhead" data-i18n="guarddesc">1/2 Focus, +1 for Weapon</span>
-						<div class="flexspacer"></div>
-					</div>
-					<div class="sheet-row">
-						<div class="dispositiondots marginbot">
-							<div class="flexspacer"></div>
-							<input type="hidden" name="attr_guard" class="dot" value="0" />
-							<input type="hidden" name="attr_guardwep" value="0">
-							<div class="none"><label class="center" data-i18n="guarddown">Guard Down</label></div>							
-							<input type="hidden" class="guardval" name="attr_guard1" value="1" />
-							<button type="action" name="act_guard-1" class="guarddot gt-0guard">
-								<span class="checked"></span>
-							</button>
-							<input type="hidden" class="guardval" name="attr_guard2" value="1" />
-							<button type="action" name="act_guard-2" class="guarddot gt-0guard gt-1guard">
-								<span class="checked"></span>
-							</button>
-							<input type="hidden" class="guardval" name="attr_guard3" value="1" />
-							<button type="action" name="act_guard-3" class="guarddot gt-0guard gt-1guard gt-2guard">
-								<span class="checked"></span>
-							</button>							
-							<input type="hidden" name="attr_guardwep" value="0" />
-							<input type="hidden" class="guardval" name="attr_guard4" value="1" />
-							<button type="action" name="act_guard-4" class="guardwepdot">
-								<span class="checked"></span>
-							</button>
-							<div class="flexspacer"></div>
-						</div>
-					</div>
-					<div class="sheet-row">
-						<label data-i18n="wounds">Wounds</label>
-						<div class="dispositiondots marginbot">
-							<div class="flexspacer"></div>
-							<input type="hidden" name="attr_wound" class="dot" value="0" />
-							<button type="action" name="act_wound-1" class="dot gt-0">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_wound-2" class="dot gt-0 gt-1">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_wound-3" class="dot gt-0 gt-1 gt-2">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_wound-4" class="dot gt-0 gt-1 gt-2 gt-3">
-								<span class="checked"></span>
-							</button>
-							<button type="action" name="act_wound-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
-								<span class="checked"></span>
-							</button>
-							<div class="flexspacer"></div>
-						</div>	
-					</div>
-					<div class="sheet-row">
-						<label data-i18n="woundpenalties">Wound Penalties</label>
-						<input type="number" name="attr_woundpenalty" class="blackbox marginbot" style="width: 3.5em !important" value="0">
-					</div>
-					<div class="sheet-row">
-						<label data-i18n="xp">Experience Points</label>
-						<input type="number" name="attr_xp" class="blackbox marginbot" style="width: 3.5em !important" value="0">
-					</div>
-					<div class="sectionhead"><div class="flexspacer"></div><span data-i18n="persistentconditions">Persistent Conditions</span><div class="flexspacer"></div></div>
-					<fieldset class="repeating_conditions" name="repeating_conditions">
-						<input type="text" name="attr_condition">
-					</fieldset>				
+			</div>		
+			<div class="col">
+				<div class="sectionhead">
+					<div class="flexspacer"></div>
+					<div class="headpre"></div>
+					<span data-i18n="defenses">Defenses</span>
+					<div class="headpost"></div>
+					<div class="flexspacer"></div>
+				</div>
+				<div class="center">
+					<label data-i18n="npcphysical" class="inline">P</label>
+					<input type="number" name="attr_npcpdef" value="0">
+					<label data-i18n="npcsocial" class="inline">S</label>
+					<input type="number" name="attr_npcsdef" value="0">
 				</div>
 			</div>
+			<div class="col">
+				<label data-i18n="armor" class="center">Armor</label>
+				<div class="npcarmorhold">
+					<div class="armor center"><input type="number" name="attr_armor" value="0"></div>
+				</div>
+			</div>
+		</div>
+		<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="dispositions">Dispositions</span><div class="headpost"></div><div class="flexspacer"></div></div>
+		<div class="flexcontainer">
+			<input type="text" name="attr_disposition1name" class="flex inline">
+			<div class="dispositiondots">													
+				<input type="hidden" class="radio" name="attr_disposition1" value="3" />
+				<div class="flexspacer"></div>
+				<button type="action" name="act_disposition1_1" class="radio radio-1">
+					<span class="unchecked" data-i18n="H">H</span>
+					<span class="checked" data-i18n="H">H</span>
+				</button>
+				<div class="flexspacer"></div>
+				<button type="action" name="act_disposition1_2" class="radio radio-2">
+					<span class="unchecked" data-i18n="G">G</span>
+					<span class="checked" data-i18n="G">G</span>
+				</button>
+				<div class="flexspacer"></div>
+				<button type="action" name="act_disposition1_3" class="radio radio-3">
+					<span class="unchecked" data-i18n="I">I</span>
+					<span class="checked" data-i18n="I">I</span>
+				</button>
+				<div class="flexspacer"></div>
+				<button type="action" name="act_disposition1_4" class="radio radio-4">
+					<span class="unchecked" data-i18n="A">A</span>
+					<span class="checked" data-i18n="A">A</span>
+				</button>
+				<div class="flexspacer"></div>
+				<button type="action" name="act_disposition1_5" class="radio radio-5">
+					<span class="unchecked" data-i18n="F">F</span>
+					<span class="checked" data-i18n="F">F</span>
+				</button>
+				<div class="flexspacer"></div>
+			</div>
+		</div>
+		<div class="flexcontainer">
+			<input type="text" name="attr_disposition2name" class="flex inline">
+			<div class="dispositiondots">
+				<input type="hidden" class="radio" name="attr_disposition2" value="3" />
+				<div class="flexspacer"></div>
+				<button type="action" name="act_disposition2_1" class="radio radio-1">
+					<span class="unchecked" data-i18n="H">H</span>
+					<span class="checked" data-i18n="H">H</span>
+				</button>
+				<div class="flexspacer"></div>
+				<button type="action" name="act_disposition2_2" class="radio radio-2">
+					<span class="unchecked" data-i18n="G">G</span>
+					<span class="checked" data-i18n="G">G</span>
+				</button>
+				<div class="flexspacer"></div>
+				<button type="action" name="act_disposition2_3" class="radio radio-3">
+					<span class="unchecked" data-i18n="I">I</span>
+					<span class="checked" data-i18n="I">I</span>
+				</button>
+				<div class="flexspacer"></div>
+				<button type="action" name="act_disposition2_4" class="radio radio-4">
+					<span class="unchecked" data-i18n="A">A</span>
+					<span class="checked" data-i18n="A">A</span>
+				</button>
+				<div class="flexspacer"></div>
+				<button type="action" name="act_disposition2_5" class="radio radio-5">
+					<span class="unchecked" data-i18n="F">F</span>
+					<span class="checked" data-i18n="F">F</span>
+				</button>
+				<div class="flexspacer"></div>
+			</div>
+		</div>
+		<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="weapons">Weapons</span><div class="headpost"></div><div class="flexspacer"></div></div>
+		<div class="weaponhead flexcontainer">
+			<div class="flex center" data-i18n="name">Name</div>
+			<div data-i18n="G">G</div>
+			<div class="selwidth" data-i18n="reach">Reach</div>
+			<div class="numwidth" data-i18n="P">P</div>
+			<div class="numwidth" data-i18n="L">L</div>
+			<div class="flex center" data-i18n="conditions">Condition(s)</div>
+		</div>		
+		<fieldset class="repeating_weapons" name="repeating_weapons">
+			<div class="weaponwrap">
+				<div class="flexcontainer">
+					<div class="flex inline"><input class="weaponname" type="text" name="attr_weaponname"></div>
+					<input type="checkbox" name="attr_weaponguard">							
+					<select class="weaponselect" name="attr_weaponreach">
+						<option value="touch" data-i18n="touch">Touch</option>
+						<option value="close" data-i18n="close">Close</option>
+						<option value="extend" data-i18n="extended">Extended</option>
+						<option value="short" data-i18n="shortrange">Short Range</option>
+						<option value="long" data-i18n="longrange">Long Range</option>
+						<option value="aoe" data-i18n="aoe">AoE</option>
+					</select>
+					<input type="number" name="attr_weaponpotency" value="0">
+					<input type="number" name="attr_weaponload" value="0">
+					<input type="text" class="flex minwidth" name="attr_weaponcond">
+				</div>
+			</div>
+		</fieldset>
+		<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="notes">Abilities &amp; Notes</span><div class="headpost"></div><div class="flexspacer"></div></div>
+		<div class="sheet-row center">
+		<textarea name="attr_npcnotes"></textarea>
 		</div>
 	</div>
 </div>
 <script type="text/worker">
-	const dotTypes = ["repeating_memberships:membertemp","vocation","temptation","tactics","survival","streetwise","stealth","science","riding","refinement","will","presence","parley","mysteries","melee","medicine","investigation","intuition","guile","fisticuffs","firearms","focus","reason","fencing","engineering","composure","command","burglary","bureaucracy","athletics","artisan","academics","vigor","grace","corruption","ethertemp","purposetemp","meanstemp","classtemp","repeating_reputations:reputationtemp","repeating_affinities:affinitytemp","wound"];
+	const dotTypes = ["repeating_npcskills:npcskill","npcphysical","npcsocial","npcmental","repeating_memberships:membertemp","vocation","temptation","tactics","survival","streetwise","stealth","science","riding","refinement","will","presence","parley","mysteries","melee","medicine","investigation","intuition","guile","fisticuffs","firearms","focus","reason","fencing","engineering","composure","command","burglary","bureaucracy","athletics","artisan","academics","vigor","grace","corruption","ethertemp","purposetemp","meanstemp","classtemp","repeating_reputations:reputationtemp","repeating_affinities:affinitytemp","wound"];
 	const dotValues = ["1","2","3","4","5"];
 	dotTypes.forEach(function(type) {
 		dotValues.forEach(function(value) {
@@ -1390,7 +1910,7 @@
 	
 	on("change:focus change:repeating_weapons:weaponguard", function(event) {
 		getSectionIDs("weapons",function(idarray) {
-		    let fullarray = [...idarray.map((x) => "repeating_weapons_"+x+"_weaponguard"),"focus"]
+			let fullarray = [...idarray.map((x) => "repeating_weapons_"+x+"_weaponguard"),"focus"]
 			let weaponadd = "0";
 			getAttrs(fullarray, function(currents) {
 				for(const [key,value] of Object.entries(currents)) { 				
@@ -1404,4 +1924,4 @@
 			});
 		});
 	});
-</script>																	
+</script>																					

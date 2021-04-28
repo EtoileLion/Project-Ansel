@@ -87,4 +87,11 @@
 "persistentconditions":"Persistent Conditions",
 "assets2":"&amp; Transcendent Powers",
 "memberships":"Memberships",
-"reputations":"Reputations"}
+"reputations":"Reputations",
+"threat":"Threat",
+"npcphysical":"Physical",
+"npcmental":"Mental",
+"npcsocial":"Social",
+"skillstraits":"Skills &amp; Traits",
+"defenses":"Defenses",
+"notes":"Abilities &amp; Notes"}
