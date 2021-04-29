@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Italiana|Rye|Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Italiana|Rye&display=swap');
 
 .box {
 	width: 100%;
@@ -19,8 +19,8 @@ input[type="text"] {
 	border-right:none;
 	border-top:none;
 	border-bottom: 2px solid rgb(172,146,20);
-	font-family: Cookie;
-	font-size: large;
+	font-family: Italiana;
+	font-weight: bold;	
 }
 .deftable select,
 label {
@@ -326,8 +326,8 @@ input.radio:not([value="5"]) ~ button.radio-5 > span.checked {
 .weaponselect {
 	background-color: transparent;
 	width: auto;
-	font-family: Cookie;
-	font-size: 1.2em;
+	font-family: Italiana;
+	font-weight: bold;
 }
 .selwidth {
 	width: 92px;
@@ -421,9 +421,14 @@ input.radio:not([value="5"]) ~ button.radio-5 > span.checked {
 .minwidth {
 	min-width: 0px;
 }
+.pcsheet textarea,
 .npcsheet textarea {
-	width: 99%;
-	background-color: rgba(0,0,0,0.1);
-	font-family: Cookie;
-	font-size: large;
+		background: transparent;
+	border: 1px solid rgb(172,146,20);
+	font-family: Italiana;
+	font-size: small;
+	font-weight: bold;
+}
+.blesstext textarea {
+	height: 38px;
 }

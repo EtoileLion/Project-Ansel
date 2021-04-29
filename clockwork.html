@@ -236,8 +236,8 @@
 				<div class="section">
 					<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="blessings">Blessings, Curses <br>&amp; Masteries</span><div class="headpost"></div><div class="flexspacer"></div></div>
 					<fieldset class="repeating_blessings" name="repeating_blessings">
-						<div class="flexcontainer">
-							<input type="text" name="attr_blessname" class="flex">
+						<div class="flexcontainer blesstext">
+							<textarea name="attr_blessname" class="flex"></textarea>
 						</div>
 					</fieldset>
 				</div>
@@ -1343,6 +1343,10 @@
 				</div>
 			</div>
 		</div>
+		<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="notes">Abilities &amp; Notes</span><div class="headpost"></div><div class="flexspacer"></div></div>
+		<div class="flexcontainer">
+			<textarea name="attr_npcnotes" class="flex"></textarea>
+		</div>
 	</div>
 	<div class="npcsheet">
 		<div class="headerrow">
@@ -1853,8 +1857,8 @@
 			</div>
 		</fieldset>
 		<div class="sectionhead"><div class="flexspacer"></div><div class="headpre"></div><span data-i18n="notes">Abilities &amp; Notes</span><div class="headpost"></div><div class="flexspacer"></div></div>
-		<div class="sheet-row center">
-		<textarea name="attr_npcnotes"></textarea>
+		<div class="sheet-row flexcontainer">
+			<textarea name="attr_npcnotes" class="flex"></textarea>
 		</div>
 	</div>
 </div>
